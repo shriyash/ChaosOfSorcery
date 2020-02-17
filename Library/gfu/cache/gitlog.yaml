@@ -13,9 +13,597 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-02-17T15:32:38.736-05:00
+  lastUpdatedAtString: 2020-02-17T15:40:59.451-05:00
   initializedAtString: 2020-02-17T15:32:38.736-05:00
   log:
+  - commitID: 370dba0279c135b688b2dd6f923ab0bcf62e888d
+    mergeA: 
+    mergeB: 
+    authorName: Broski-AC
+    authorEmail: acbroski@oakland.edu
+    commitEmail: acbroski@oakland.edu
+    commitName: Broski-AC
+    summary: Joined repository
+    description: 
+    timeString: 2020-02-17T15:40:56.000-05:00
+    commitTimeString: 2020-02-17T15:40:56.000-05:00
+    changes:
+    - path: Library/ArtifactDB
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ArtifactDB
+      projectPath: Library/ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/Artifacts/33/33037308ab43ab9abbe27388dda72116
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/Artifacts/33/33037308ab43ab9abbe27388dda72116
+      projectPath: Library/Artifacts/33/33037308ab43ab9abbe27388dda72116
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library/Artifacts/53/53fad138a971b2383d90d5c093ebb624
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/Artifacts/53/53fad138a971b2383d90d5c093ebb624
+      projectPath: Library/Artifacts/53/53fad138a971b2383d90d5c093ebb624
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library/EditorInstance.json
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/EditorInstance.json
+      projectPath: Library/EditorInstance.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/SceneVisibilityState.asset
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/SceneVisibilityState.asset
+      projectPath: Library/SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+      projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      projectPath: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+      projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+      projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.Timeline.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.Timeline.dll
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.Timeline.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.Timeline.pdb
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Unity.VSCode.Editor.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/Unity.VSCode.Editor.pdb
+      projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+      projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/UnityEditor.UI.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/UnityEditor.UI.dll
+      projectPath: Library/ScriptAssemblies/UnityEditor.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+      projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/UnityEngine.UI.dll
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ScriptAssemblies/UnityEngine.UI.dll
+      projectPath: Library/ScriptAssemblies/UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/SourceAssetDB
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/SourceAssetDB
+      projectPath: Library/SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gituser.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gituser.yaml
+      projectPath: Library/gfu/cache/gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/shadercompiler-UnityShaderCompiler0.log
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/shadercompiler-UnityShaderCompiler0.log
+      projectPath: Library/shadercompiler-UnityShaderCompiler0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Temp/ProcessJobs/6e05215069b47635404c47268efc31c0.bakert
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/ProcessJobs/6e05215069b47635404c47268efc31c0.bakert
+      projectPath: Temp/ProcessJobs/6e05215069b47635404c47268efc31c0.bakert
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-037a413c22b2d44a494b8c64c0511569
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-037a413c22b2d44a494b8c64c0511569
+      projectPath: Temp/UnityTempFile-037a413c22b2d44a494b8c64c0511569
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-0468b37bb135b49a0ba299fb2fa10d03
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-0468b37bb135b49a0ba299fb2fa10d03
+      projectPath: Temp/UnityTempFile-0468b37bb135b49a0ba299fb2fa10d03
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-06a4a1b24f3b7413cb18c9c338611805
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-06a4a1b24f3b7413cb18c9c338611805
+      projectPath: Temp/UnityTempFile-06a4a1b24f3b7413cb18c9c338611805
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-08183017394204e4ba4f492f426f42ad
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-08183017394204e4ba4f492f426f42ad
+      projectPath: Temp/UnityTempFile-08183017394204e4ba4f492f426f42ad
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-0c756ecb6a9e147d9b40fc6ac3e26f52
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-0c756ecb6a9e147d9b40fc6ac3e26f52
+      projectPath: Temp/UnityTempFile-0c756ecb6a9e147d9b40fc6ac3e26f52
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-0eebe1312299f4f87963db7914b96760
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-0eebe1312299f4f87963db7914b96760
+      projectPath: Temp/UnityTempFile-0eebe1312299f4f87963db7914b96760
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-0f66a1f396fdd4906a458976c9f7dd93
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-0f66a1f396fdd4906a458976c9f7dd93
+      projectPath: Temp/UnityTempFile-0f66a1f396fdd4906a458976c9f7dd93
+      originalPath: Temp/UnityTempFile-0e878727ceaed40ada471dee38a28bb7
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-17eef48059a8d448084d4cc7f11f1887
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-17eef48059a8d448084d4cc7f11f1887
+      projectPath: Temp/UnityTempFile-17eef48059a8d448084d4cc7f11f1887
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-18615701918ad40fea6bfcdb172374aa
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-18615701918ad40fea6bfcdb172374aa
+      projectPath: Temp/UnityTempFile-18615701918ad40fea6bfcdb172374aa
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-18c9807686b234b8a8101597c0362893
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-18c9807686b234b8a8101597c0362893
+      projectPath: Temp/UnityTempFile-18c9807686b234b8a8101597c0362893
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-228e12f6af6de4ba5b039f940b44468a
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-228e12f6af6de4ba5b039f940b44468a
+      projectPath: Temp/UnityTempFile-228e12f6af6de4ba5b039f940b44468a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-2937ddf1c38be478eab76f7ed7cf18b1
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-2937ddf1c38be478eab76f7ed7cf18b1
+      projectPath: Temp/UnityTempFile-2937ddf1c38be478eab76f7ed7cf18b1
+      originalPath: Temp/UnityTempFile-ae212e6e184e042888396d2b25c2ebb4
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-2afd7d0f152bb423782e45324d15ea39
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-2afd7d0f152bb423782e45324d15ea39
+      projectPath: Temp/UnityTempFile-2afd7d0f152bb423782e45324d15ea39
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-2e293723b56fe43678b85790a3eb206f
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-2e293723b56fe43678b85790a3eb206f
+      projectPath: Temp/UnityTempFile-2e293723b56fe43678b85790a3eb206f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-2e2abd2977d8542c6ab2463129b83ce4
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-2e2abd2977d8542c6ab2463129b83ce4
+      projectPath: Temp/UnityTempFile-2e2abd2977d8542c6ab2463129b83ce4
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-3031fd57aa61d4df291c41bc5d0ebfab
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-3031fd57aa61d4df291c41bc5d0ebfab
+      projectPath: Temp/UnityTempFile-3031fd57aa61d4df291c41bc5d0ebfab
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-35e95f02209f04fdf9aaecfe0172ef8a
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-35e95f02209f04fdf9aaecfe0172ef8a
+      projectPath: Temp/UnityTempFile-35e95f02209f04fdf9aaecfe0172ef8a
+      originalPath: Temp/UnityTempFile-a5907feacb63745599197b03cbbf04c1
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-366b95c0bcdbb43daa09d9129244e7e9
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-366b95c0bcdbb43daa09d9129244e7e9
+      projectPath: Temp/UnityTempFile-366b95c0bcdbb43daa09d9129244e7e9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-50052d67fac274f1f9626091943b13db
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-50052d67fac274f1f9626091943b13db
+      projectPath: Temp/UnityTempFile-50052d67fac274f1f9626091943b13db
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-55c5644d07ca34c3c9670e916a2ddb1c
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-55c5644d07ca34c3c9670e916a2ddb1c
+      projectPath: Temp/UnityTempFile-55c5644d07ca34c3c9670e916a2ddb1c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-5ce48e31888814b62af0375d8f7dea0f
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-5ce48e31888814b62af0375d8f7dea0f
+      projectPath: Temp/UnityTempFile-5ce48e31888814b62af0375d8f7dea0f
+      originalPath: Temp/UnityTempFile-3fa4b6df768634ad48a904a789fb5926
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-641077611b5b94e26aa9272c33786078
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-641077611b5b94e26aa9272c33786078
+      projectPath: Temp/UnityTempFile-641077611b5b94e26aa9272c33786078
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-6e1bd02ff1e3847509fbcf816719ece2
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-6e1bd02ff1e3847509fbcf816719ece2
+      projectPath: Temp/UnityTempFile-6e1bd02ff1e3847509fbcf816719ece2
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-6e41151ef259f43b693c1c5c84cbc9c1
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-6e41151ef259f43b693c1c5c84cbc9c1
+      projectPath: Temp/UnityTempFile-6e41151ef259f43b693c1c5c84cbc9c1
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-6f1b1f58a38ab408082c1487efd70db1
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-6f1b1f58a38ab408082c1487efd70db1
+      projectPath: Temp/UnityTempFile-6f1b1f58a38ab408082c1487efd70db1
+      originalPath: Temp/UnityTempFile-aed6d844d4b0e435c813cf77fa8dd4f2
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-6f8d92e56ad924fddbb9e2714ff8773f
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-6f8d92e56ad924fddbb9e2714ff8773f
+      projectPath: Temp/UnityTempFile-6f8d92e56ad924fddbb9e2714ff8773f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-717b146efe7d149a287288af04249c79
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-717b146efe7d149a287288af04249c79
+      projectPath: Temp/UnityTempFile-717b146efe7d149a287288af04249c79
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-79b41a856c5ce4b3ba0934a812661d17
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-79b41a856c5ce4b3ba0934a812661d17
+      projectPath: Temp/UnityTempFile-79b41a856c5ce4b3ba0934a812661d17
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-7b30c17e3a959415bb6e66ba116a0422
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-7b30c17e3a959415bb6e66ba116a0422
+      projectPath: Temp/UnityTempFile-7b30c17e3a959415bb6e66ba116a0422
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-8cd613ad32702459cbf3b6c48165734a
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-8cd613ad32702459cbf3b6c48165734a
+      projectPath: Temp/UnityTempFile-8cd613ad32702459cbf3b6c48165734a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-8f013cd28d00e45fa944789d1381bafa
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-8f013cd28d00e45fa944789d1381bafa
+      projectPath: Temp/UnityTempFile-8f013cd28d00e45fa944789d1381bafa
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-9602dbe769fab45e1965fe73048f276f
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-9602dbe769fab45e1965fe73048f276f
+      projectPath: Temp/UnityTempFile-9602dbe769fab45e1965fe73048f276f
+      originalPath: Temp/UnityTempFile-a9466e42512c54c11b3e0d13b2a140ed
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-965146dd1192f4068beeba4d4d1e979c
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-965146dd1192f4068beeba4d4d1e979c
+      projectPath: Temp/UnityTempFile-965146dd1192f4068beeba4d4d1e979c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-9a963bc58998e424fa874bad5438e63a
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-9a963bc58998e424fa874bad5438e63a
+      projectPath: Temp/UnityTempFile-9a963bc58998e424fa874bad5438e63a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-a648ed924f328427d90310304ded89b6
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-a648ed924f328427d90310304ded89b6
+      projectPath: Temp/UnityTempFile-a648ed924f328427d90310304ded89b6
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-acdef5b2780c6407ab24e831069b547b
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-acdef5b2780c6407ab24e831069b547b
+      projectPath: Temp/UnityTempFile-acdef5b2780c6407ab24e831069b547b
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-b01220e4821844a53a06af56adc3a7be
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-b01220e4821844a53a06af56adc3a7be
+      projectPath: Temp/UnityTempFile-b01220e4821844a53a06af56adc3a7be
+      originalPath: Temp/UnityTempFile-36e8f0dc733af4efea2e49a975a3bad4
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-c3302c7642fa64e71ac4a1f5c3535b07
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-c3302c7642fa64e71ac4a1f5c3535b07
+      projectPath: Temp/UnityTempFile-c3302c7642fa64e71ac4a1f5c3535b07
+      originalPath: Temp/UnityTempFile-fb421013e96c64bc58147e1faa641663
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-cdac8faf1be7a4014ba5403f821b7bac
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-cdac8faf1be7a4014ba5403f821b7bac
+      projectPath: Temp/UnityTempFile-cdac8faf1be7a4014ba5403f821b7bac
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-d4c9096ce7383434595f0df92fb714be
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-d4c9096ce7383434595f0df92fb714be
+      projectPath: Temp/UnityTempFile-d4c9096ce7383434595f0df92fb714be
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-d5b0a4fb6c1bb4440b7d8076778bdd42
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-d5b0a4fb6c1bb4440b7d8076778bdd42
+      projectPath: Temp/UnityTempFile-d5b0a4fb6c1bb4440b7d8076778bdd42
+      originalPath: Temp/UnityTempFile-014dfd048f3084824934b503a204fc32
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-d89993d7d6dc9400f865530778c0c4e8
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-d89993d7d6dc9400f865530778c0c4e8
+      projectPath: Temp/UnityTempFile-d89993d7d6dc9400f865530778c0c4e8
+      originalPath: Temp/UnityTempFile-0fa3d89b85d0e49bd84db126b0f8cfcf
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-da244d50005c14d26b897fa85ec34941
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-da244d50005c14d26b897fa85ec34941
+      projectPath: Temp/UnityTempFile-da244d50005c14d26b897fa85ec34941
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-dba95252aebf64771984430aabbb1002
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-dba95252aebf64771984430aabbb1002
+      projectPath: Temp/UnityTempFile-dba95252aebf64771984430aabbb1002
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-dd66ecec8e2d445029bbae44568e09d3
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-dd66ecec8e2d445029bbae44568e09d3
+      projectPath: Temp/UnityTempFile-dd66ecec8e2d445029bbae44568e09d3
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-dec8091b5e36f4e0688698d431de0e48
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-dec8091b5e36f4e0688698d431de0e48
+      projectPath: Temp/UnityTempFile-dec8091b5e36f4e0688698d431de0e48
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-e415e095ffc43421f89f4ee14ac09b83
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-e415e095ffc43421f89f4ee14ac09b83
+      projectPath: Temp/UnityTempFile-e415e095ffc43421f89f4ee14ac09b83
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-e99fbdda7e2d84b8db4cfb4c77ffcc05
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-e99fbdda7e2d84b8db4cfb4c77ffcc05
+      projectPath: Temp/UnityTempFile-e99fbdda7e2d84b8db4cfb4c77ffcc05
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-ea9bc2a8a405346a383fdb6372ab6600
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-ea9bc2a8a405346a383fdb6372ab6600
+      projectPath: Temp/UnityTempFile-ea9bc2a8a405346a383fdb6372ab6600
+      originalPath: Temp/UnityTempFile-50c690002450942d2a2b2673d2ba49c4
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-ec221a666748e4fe6ab67148164222d0
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-ec221a666748e4fe6ab67148164222d0
+      projectPath: Temp/UnityTempFile-ec221a666748e4fe6ab67148164222d0
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-ef1735f4d904d4dad933961d48e06ed8
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-ef1735f4d904d4dad933961d48e06ed8
+      projectPath: Temp/UnityTempFile-ef1735f4d904d4dad933961d48e06ed8
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-ef84c2b6016d34a99bef1d6b139a68a3
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-ef84c2b6016d34a99bef1d6b139a68a3
+      projectPath: Temp/UnityTempFile-ef84c2b6016d34a99bef1d6b139a68a3
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-f034d57358f5848f3bc0f29652320203
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-f034d57358f5848f3bc0f29652320203
+      projectPath: Temp/UnityTempFile-f034d57358f5848f3bc0f29652320203
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-f4f6e977e9bc14eb5a59dfb54ba96668
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-f4f6e977e9bc14eb5a59dfb54ba96668
+      projectPath: Temp/UnityTempFile-f4f6e977e9bc14eb5a59dfb54ba96668
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-f5a10c3343c344af3beb688240c0ce83
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-f5a10c3343c344af3beb688240c0ce83
+      projectPath: Temp/UnityTempFile-f5a10c3343c344af3beb688240c0ce83
+      originalPath: Temp/UnityTempFile-d4343d25582b2475a8293bddf2fffc69
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-f6bb4e4dd7c6d4e8a95f47e0ed275a24
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-f6bb4e4dd7c6d4e8a95f47e0ed275a24
+      projectPath: Temp/UnityTempFile-f6bb4e4dd7c6d4e8a95f47e0ed275a24
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-f78ff57a0defd4f4ab5332a25d602fb6
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-f78ff57a0defd4f4ab5332a25d602fb6
+      projectPath: Temp/UnityTempFile-f78ff57a0defd4f4ab5332a25d602fb6
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-fbc4af75b806146dc89a96a2d320c893
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-fbc4af75b806146dc89a96a2d320c893
+      projectPath: Temp/UnityTempFile-fbc4af75b806146dc89a96a2d320c893
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Temp/UnityTempFile-fecb27ac3fd654a78a361c10ba8e8fbb
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityTempFile-fecb27ac3fd654a78a361c10ba8e8fbb
+      projectPath: Temp/UnityTempFile-fecb27ac3fd654a78a361c10ba8e8fbb
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
   - commitID: c9513f027a3cc7ccc7fcdf2e0acefcbe25ce0779
     mergeA: 
     mergeB: 
