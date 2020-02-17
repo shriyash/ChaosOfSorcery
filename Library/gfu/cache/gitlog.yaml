@@ -13,9 +13,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-02-17T15:40:59.451-05:00
+  lastUpdatedAtString: 2020-02-17T15:41:52.238-05:00
   initializedAtString: 2020-02-17T15:32:38.736-05:00
   log:
+  - commitID: 8860bc8c10b83efecbb406776dfd65a4db5c80bb
+    mergeA: 
+    mergeB: 
+    authorName: Broski-AC
+    authorEmail: acbroski@oakland.edu
+    commitEmail: acbroski@oakland.edu
+    commitName: Broski-AC
+    summary: Joining repository
+    description: 
+    timeString: 2020-02-17T15:41:50.000-05:00
+    commitTimeString: 2020-02-17T15:41:50.000-05:00
+    changes:
+    - path: Library/SourceAssetDB
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/SourceAssetDB
+      projectPath: Library/SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/branches.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/branches.yaml
+      projectPath: Library/gfu/cache/branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 370dba0279c135b688b2dd6f923ab0bcf62e888d
     mergeA: 
     mergeB: 
