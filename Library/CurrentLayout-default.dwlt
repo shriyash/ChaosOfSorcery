@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
+    x: 160
     y: 45
     width: 1280
     height: 713
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 504, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 93
+  controlID: 119
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 94
+  controlID: 81
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 95
+  controlID: 55
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,12 +294,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1004
+    x: 1164
     y: 75
     width: 275
     height: 642
   m_ViewDataDictionary: {fileID: 0}
-  progressMessageClearTime: -1
+  progressMessageClearTime: 410.131166791
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
@@ -607,6 +607,60 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Library/ArtifactDB
+        label: ArtifactDB
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Library/ArtifactDB
+          fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ArtifactDB
+          projectPath: Library/ArtifactDB
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Library/CurrentLayout-default.dwlt
+        label: CurrentLayout-default.dwlt
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Library/CurrentLayout-default.dwlt
+          fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/CurrentLayout-default.dwlt
+          projectPath: Library/CurrentLayout-default.dwlt
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Library/EditorInstance.json
+        label: EditorInstance.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Library/EditorInstance.json
+          fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/EditorInstance.json
+          projectPath: Library/EditorInstance.json
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Library/gfu
         label: gfu
         level: 1
@@ -679,8 +733,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
-      - path: Library/gfu/cache/gitlog.yaml
-        label: gitlog.yaml
+      - path: Library/gfu/cache/gitstatusentries.yaml
+        label: gitstatusentries.yaml
         level: 3
         isFolder: 0
         isContainer: 0
@@ -691,9 +745,9 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Library/gfu/cache/gitlog.yaml
-          fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlog.yaml
-          projectPath: Library/gfu/cache/gitlog.yaml
+          path: Library/gfu/cache/gitstatusentries.yaml
+          fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitstatusentries.yaml
+          projectPath: Library/gfu/cache/gitstatusentries.yaml
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
@@ -712,6 +766,42 @@ MonoBehaviour:
           path: Library/gfu/cache/gittrackingstatus.yaml
           fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gittrackingstatus.yaml
           projectPath: Library/gfu/cache/gittrackingstatus.yaml
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Library/gfu/cache/repoinfo.yaml
+        label: repoinfo.yaml
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Library/gfu/cache/repoinfo.yaml
+          fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/repoinfo.yaml
+          projectPath: Library/gfu/cache/repoinfo.yaml
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Library/SourceAssetDB
+        label: SourceAssetDB
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Library/SourceAssetDB
+          fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/SourceAssetDB
+          projectPath: Library/SourceAssetDB
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
@@ -735,6 +825,24 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
+    - path: Library/ArtifactDB
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ArtifactDB
+      projectPath: Library/ArtifactDB
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Library/CurrentLayout-default.dwlt
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/CurrentLayout-default.dwlt
+      projectPath: Library/CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Library/EditorInstance.json
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/EditorInstance.json
+      projectPath: Library/EditorInstance.json
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
     - path: Library/gfu/cache/branches.yaml
       fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/branches.yaml
       projectPath: Library/gfu/cache/branches.yaml
@@ -747,9 +855,9 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Library/gfu/cache/gitlog.yaml
-      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlog.yaml
-      projectPath: Library/gfu/cache/gitlog.yaml
+    - path: Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
@@ -759,15 +867,27 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    changedFilesText: 4 changed files
+    - path: Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Library/SourceAssetDB
+      fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/SourceAssetDB
+      projectPath: Library/SourceAssetDB
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 9 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2020-02-17T16:32:11.155-05:00
+      updatedTimeString: 2020-02-20T23:16:46.470-05:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2020-02-17T16:37:30.180-05:00
+      updatedTimeString: 2020-02-20T23:23:09.689-05:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2020-02-17T16:31:14.634-05:00
+      updatedTimeString: 2020-02-20T23:16:46.513-05:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -50907,7 +51027,7 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: master
   currentRemoteUrl: https://github.com/shriyash/ChaosOfSorcery.git
-  statusAhead: 1
+  statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
@@ -50920,13 +51040,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2020-02-17T16:32:11.155-05:00
+    updatedTimeString: 2020-02-20T23:16:46.470-05:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2020-02-17T16:37:30.217-05:00
+    updatedTimeString: 2020-02-20T23:16:46.509-05:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2020-02-17T16:37:30.180-05:00
+    updatedTimeString: 2020-02-20T23:23:09.689-05:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -50944,10 +51064,10 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
-  appManagerProgressValue: 0.5
-  appManagerProgressMessage: Setting up git...
+  repositoryProgressValue: 1
+  repositoryProgressMessage: Reading locks...
+  appManagerProgressValue: 0.8
+  appManagerProgressMessage: Initializing repository...
   connections: []
   primaryConnectionUsername: Broski-AC
 --- !u!114 &13
@@ -50997,7 +51117,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 160
     y: 467
     width: 1003
     height: 250
@@ -51026,7 +51146,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a340000
+    m_SelectedIDs: 2c340000
     m_LastClickedID: 0
     m_ExpandedIDs: 0000000000ca9a3b
     m_RenameOverlay:
@@ -51171,7 +51291,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 160
     y: 75
     width: 247
     height: 371
@@ -51181,7 +51301,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 80faffff72fbffff
+      m_ExpandedIDs: 72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -51226,7 +51346,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 248
+    x: 408
     y: 75
     width: 754
     height: 371

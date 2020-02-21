@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-02-20T22:56:01.028-05:00
-  initializedAtString: 2020-02-20T22:56:01.028-05:00
+  lastUpdatedAtString: 2020-02-20T23:23:09.689-05:00
+  initializedAtString: 2020-02-20T23:16:46.478-05:00
   entries:
-  - path: .gitignore
-    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/.gitignore
-    projectPath: .gitignore
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Library/ArtifactDB
     fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/ArtifactDB
     projectPath: Library/ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library/CurrentLayout-default.dwlt
+    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/CurrentLayout-default.dwlt
+    projectPath: Library/CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -32,8 +32,8 @@ MonoBehaviour:
     fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/EditorInstance.json
     projectPath: Library/EditorInstance.json
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library/gfu/cache/branches.yaml
     fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/branches.yaml
     projectPath: Library/gfu/cache/branches.yaml
@@ -43,12 +43,6 @@ MonoBehaviour:
   - path: Library/gfu/cache/gitlocks.yaml
     fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlocks.yaml
     projectPath: Library/gfu/cache/gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/gfu/cache/gitlog.yaml
-    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/gitlog.yaml
-    projectPath: Library/gfu/cache/gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -64,33 +58,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library/gfu/cache/repoinfo.yaml
+    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/gfu/cache/repoinfo.yaml
+    projectPath: Library/gfu/cache/repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library/SourceAssetDB
     fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Library/SourceAssetDB
     projectPath: Library/SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: macOS.gitignore
-    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/macOS.gitignore
-    projectPath: macOS.gitignore
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp/UnityLockfile
-    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Temp/UnityLockfile
-    projectPath: Temp/UnityLockfile
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Unity.gitignore
-    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Unity.gitignore
-    projectPath: Unity.gitignore
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Windows.gitignore
-    fullPath: /Users/Allison/Desktop/ChaosOfSorcery/Windows.gitignore
-    projectPath: Windows.gitignore
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
