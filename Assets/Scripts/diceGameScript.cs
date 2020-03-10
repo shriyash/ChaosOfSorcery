@@ -2,9 +2,9 @@
 
 public class diceGameScript : MonoBehaviour
 {
-    public GameObject playerInput;
-    public GameObject enemyInput;
-    public GameObject result;
+    public  GameObject playerInput;
+    public  GameObject enemyInput;
+    public  GameObject result;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +17,13 @@ public class diceGameScript : MonoBehaviour
         
     }
 
-    void hideUI(){
+    public void hideUI(){
         playerInput.SetActive(false);
         enemyInput.SetActive(false);
         result.SetActive(false);
     }
 
-    void showUI(){
+    public void showUI(){
         playerInput.SetActive(true);
         enemyInput.SetActive(true);
         result.SetActive(true);
@@ -39,6 +39,7 @@ public class diceGameScript : MonoBehaviour
         - conditionals for various outcomes
     */
     public void diceGame() {
-
+        showUI();
     }
+
 }
