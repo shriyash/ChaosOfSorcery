@@ -10,6 +10,8 @@ public class AICombatScript
 
         //Select a random spell choice between 0 and 5 inclusive
         spellSelection = Random.Range(0, 6);
+        Debug.Log("AI spell selection " + spellSelection);
+        //
 
         //Check if value will give us a valid spell
         while (spellSelection > spellGameData.allSpellsInPool.Count - 1){

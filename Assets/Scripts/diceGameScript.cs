@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class diceGameScript : MonoBehaviour
 {
     public  GameObject playerInput;
     public  GameObject enemyInput;
     public  GameObject result;
+
+    public Text playerText;
+
     // Start is called before the first frame update
     void Start()
     {
+        //playerText = playerInput.GetComponentInChildren<Text>();
         hideUI();
     }
 
@@ -38,8 +43,16 @@ public class diceGameScript : MonoBehaviour
         - rolling dice/generating random number
         - conditionals for various outcomes
     */
-    public void diceGame() {
+    public void SetUpDiceGame() {
+        //Shows input blocks
         showUI();
+        //Generates AI's dice value
+        AICombatScript.AIDiceGuess();
+    }
+
+    public void getPlayerInput(){
+        //Need to call another function now that user input is retrieved
+
     }
 
 }

@@ -31,8 +31,8 @@ public class spellScript : MonoBehaviour
                 //Blocks player from clicking on another spells while dice game is ongoing
                 gameObject.SetActive(false);
                 //Launches dice game
-                diceGameScript diceScript = GameObject.Find("diceGame").GetComponent<diceGameScript>();
-                diceScript.diceGame();
+                diceGameScript diceScript = GameObject.Find("SetUpDiceGame").GetComponent<diceGameScript>();
+                diceScript.SetUpDiceGame();
             }
             else if ((playerSelected == true)){
                 Debug.Log("Player selected " + gameObject.name);
