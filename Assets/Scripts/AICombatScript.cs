@@ -1,13 +1,19 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class AICombatScript
+public class AICombatScript : MonoBehaviour
 {
-    private static int spellSelection;
-    private static int diceGuess;
+    public static AICombatScript ai;
+    private int spellSelection;
+    private int diceGuess;
+
+    private void Awake()
+    {
+        ai = this;
+    }
 
     //Function for having the AI make their spell choice
-    public static void AISpellChoice(){
+    public void AISpellChoice(){
         //Select a random spell choice between 0 and 5 inclusive
         spellSelection = Random.Range(0, 6);
 
@@ -36,7 +42,7 @@ public class AICombatScript
     }
 
     //Gets AI's guess for the dice game
-    public static int AIDiceGuess(){
+    public int AIDiceGuess(){
         Debug.Log("AI guess");
         diceGuess = Random.Range(1,7);
         return diceGuess;

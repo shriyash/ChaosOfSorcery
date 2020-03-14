@@ -59,7 +59,7 @@ public class diceGameScript : MonoBehaviour
         Debug.Log("showUI");
         showUI();
         //Generates AI's dice value
-        enemyValue = AICombatScript.AIDiceGuess();
+        enemyValue = AICombatScript.ai.AIDiceGuess();
     }
 
     //Begun once user inputs text

@@ -70,7 +70,7 @@ public class spellScript : MonoBehaviour
         //Debug.Log("step playerButtonPressed");
         playerSelected = true;
         //Call enemy selection in AICombatScript
-        AICombatScript.AISpellChoice();
+        AICombatScript.ai.AISpellChoice();
     }
 
     //move spell to respective slot
