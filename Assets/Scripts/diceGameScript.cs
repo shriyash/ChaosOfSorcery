@@ -9,6 +9,12 @@ public class diceGameScript : MonoBehaviour
 
     public Text playerText;
 
+    public Text enemyText;
+
+    private int enemyValue;
+
+    public Text diceVariable;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +32,11 @@ public class diceGameScript : MonoBehaviour
         playerInput.SetActive(false);
         enemyInput.SetActive(false);
         result.SetActive(false);
+        enemyText.text = "Enter guess..";
+        // I just want to clear the gosh darn text from the player
+        // InputField field = playerText.GetComponentInParent(typeof(InputField)) as InputField;
+        // field.text = "";
+        diceVariable.text = "#";
     }
 
     public void showUI(){
@@ -45,14 +56,64 @@ public class diceGameScript : MonoBehaviour
     */
     public void SetUpDiceGame() {
         //Shows input blocks
+        Debug.Log("showUI");
         showUI();
         //Generates AI's dice value
-        AICombatScript.AIDiceGuess();
+        enemyValue = AICombatScript.AIDiceGuess();
     }
 
-    public void getPlayerInput(){
-        //Need to call another function now that user input is retrieved
+    //Begun once user inputs text
+    public void DiceGame(){
+        Debug.Log("Dice game");
+        //Display enemy's result
+        enemyText.text = enemyValue.ToString();      
 
+        //Call rollDice() and retrieve value
+        int diceResult = rollDice();
+
+        //Show dice result
+        diceVariable.text = diceResult.ToString();
+
+        //Parse player input for comparisons
+        int playerTextII = int.Parse(playerText.text);
+
+        //Handle conditions
+        //Player wins; call moveSpell to player slot
+        if (playerTextII == diceResult){
+            Debug.Log("Player wins");
+            spellGameData.spellObjectStore.setPlayerSelected(false);
+            spellGameData.spellObjectStore.setEnemySelected(false);
+            spellGameData.spellObjectStore.moveSpell();
+            spellGameData.spellObjectStore.transform.parent.gameObject.SetActive(true);
+            hideUI();
+        }
+        //Enemy wins; call moveSpell to enemy Slot
+        else if (enemyValue == diceResult){
+            Debug.Log("Enemy wins");
+            spellGameData.spellObjectStore.moveSpell();
+            spellGameData.spellObjectStore.setPlayerSelected(false);
+            spellGameData.spellObjectStore.setEnemySelected(false);
+            spellGameData.spellObjectStore.transform.parent.gameObject.SetActive(true);
+            hideUI();
+        }
+        else { //If no one wins, we move on to the next round
+            Debug.Log("No one wins");
+            //Reshow spell selection object
+            spellGameData.spellObjectStore.transform.parent.gameObject.SetActive(true);
+            //Take away playerSelected and enemySelected from spell
+            spellGameData.spellObjectStore.setPlayerSelected(false);
+            spellGameData.spellObjectStore.setEnemySelected(false);
+            //Hide the UI
+            hideUI();
+        }
+
+    }
+
+    //Dice roll method
+    public int rollDice(){
+        Debug.Log("roll dice");
+        int resultDice = Random.Range(1,7);
+        return resultDice;
     }
 
 }
