@@ -67,10 +67,13 @@ public class spellScript : MonoBehaviour
 
     //Activates when player presses a spell button
     public void playerButtonPressed(){
-        //Debug.Log("step playerButtonPressed");
-        playerSelected = true;
-        //Call enemy selection in AICombatScript
-        AICombatScript.ai.AISpellChoice();
+        if (!spellGameData.dataInstance.diceGamePlaying) //Make sure the player can't press any buttons while the game is playing
+        {
+            //Debug.Log("step playerButtonPressed");
+            playerSelected = true;
+            //Call enemy selection in AICombatScript
+            AICombatScript.ai.AISpellChoice();
+        }
     }
 
     //move spell to respective slot
