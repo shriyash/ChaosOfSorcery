@@ -13,8 +13,6 @@ public class spellScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Debug.Log("Step 1: Start");
-        spellGameData.dataInstance.allSpellsInPool.Add(gameObject.name);
         playerSelected = false;
         enemySelected = false;
         lastTurnCount = spellGameData.dataInstance.turnCounter; 
@@ -26,6 +24,15 @@ public class spellScript : MonoBehaviour
         //Check if all spells have been removed; if so, exit to new scene
         if (spellGameData.dataInstance.allSpellsInPool.Count == 0){
             //exit script
+        }
+
+        if (spellGameData.dataInstance.allSpellsInPool.Contains(gameObject)) //These lines disable selected spells
+        {
+            GetComponentInChildren<Button>().interactable = true;
+        }
+        else 
+        {
+            GetComponentInChildren<Button>().interactable = false;
         }
 
         //Enemy has made their move
@@ -44,10 +51,13 @@ public class spellScript : MonoBehaviour
                 
             }
             else if ((playerSelected == true)){
+
+                moveSpell();
                 //Debug.Log("Only Player selected spell");
 
             }
             else if ((enemySelected == true)){
+                moveSpell();
                 //Debug.Log("Only Enemy selected spell");
             }
             else {
@@ -69,6 +79,7 @@ public class spellScript : MonoBehaviour
     public void playerButtonPressed(){
         if (!spellGameData.dataInstance.diceGamePlaying) //Make sure the player can't press any buttons while the game is playing
         {
+            setPlayerSelected(true);
             //Debug.Log("step playerButtonPressed");
             playerSelected = true;
             //Call enemy selection in AICombatScript
@@ -79,7 +90,7 @@ public class spellScript : MonoBehaviour
     //move spell to respective slot
     //remove gameobject name from list
     public void moveSpell(){
-
+        spellGameData.dataInstance.allSpellsInPool.Remove(this.gameObject); //Removes this spell from the active pool; comment out this line to allow repeat selections
     }
 
     //Necessary to ensure encapsulation, but still set enemySelected boolean in AICombatScript

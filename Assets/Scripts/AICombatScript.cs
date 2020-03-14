@@ -14,19 +14,14 @@ public class AICombatScript : MonoBehaviour
 
     //Function for having the AI make their spell choice
     public void AISpellChoice(){
+        Debug.Log(spellGameData.dataInstance.allSpellsInPool.Count);
         //Select a random spell choice between 0 and 5 inclusive
-        spellSelection = Random.Range(0, 6);
-
-        //Check if value will give us a valid spell
-        while (spellSelection > spellGameData.dataInstance.allSpellsInPool.Count - 1){
-            spellSelection = Random.Range(0, 6);
-        }
-
+        spellSelection = Random.Range(0, spellGameData.dataInstance.allSpellsInPool.Count - 1);
         //Get name of spellContainer that the AI selected
-        string spellName = spellGameData.dataInstance.allSpellsInPool[spellSelection];
-       
-        //Get the actual spellContainer object itself 
-        GameObject spell = GameObject.Find(spellName);
+        GameObject spell = spellGameData.dataInstance.allSpellsInPool.ToArray()[spellSelection];
+        string spellName = spell.name;
+
+        //Get spellScript from spell
         Debug.Log("AI spell selection: " + spellName);
         spellScript spellObject = spell.GetComponent<spellScript>();
 
@@ -37,13 +32,12 @@ public class AICombatScript : MonoBehaviour
         spellObject.setEnemySelected(true);
 
         //Increment turn counter in spellGameData to signify new round of activity
-        spellGameData.dataInstance.turnCounter++;
-
+        spellGameData.dataInstance.turnCounter++;      
     }
 
     //Gets AI's guess for the dice game
     public int AIDiceGuess(){
-        Debug.Log("AI guess");
+        //Debug.Log("AI guess");
         diceGuess = Random.Range(1,7);
         return diceGuess;
     }

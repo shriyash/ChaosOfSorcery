@@ -6,11 +6,6 @@ public class spellGameData : MonoBehaviour
 {
     public static spellGameData dataInstance;
 
-    private void Awake()
-    {
-        dataInstance = this;
-    }
-
     //Will increment after enemy takes a turn
     public int turnCounter = 0;
     public bool diceGamePlaying = false;
@@ -18,11 +13,20 @@ public class spellGameData : MonoBehaviour
     //Holds the spell chosen by the AI, since we should only reference this when the player also chooses it
     public spellScript spellObjectStore; 
 
-    public List<string> allSpellsInPool = new List<string>(); 
+    public List<GameObject> allSpellsInPool = new List<GameObject>(); 
 
     public List<string> spellsForPlayer = new List<string>();
 
     public List<string> spellsForEnemy = new List<string>();
+
+    private void Awake()
+    {
+        dataInstance = this;
+        foreach (GameObject spell in GameObject.FindGameObjectsWithTag("Spell Button"))
+        {
+            allSpellsInPool.Add(spell);
+        }
+    }
 
     //Any data related to spells within the scene will go here
 

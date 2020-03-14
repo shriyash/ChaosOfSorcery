@@ -56,7 +56,7 @@ public class diceGameScript : MonoBehaviour
     */
     public void SetUpDiceGame() {
         //Shows input blocks
-        Debug.Log("showUI");
+        //Debug.Log("showUI");
         showUI();
         //Generates AI's dice value
         enemyValue = AICombatScript.ai.AIDiceGuess();
@@ -81,8 +81,6 @@ public class diceGameScript : MonoBehaviour
         //Player wins; call moveSpell to player slot
         if (playerTextII == diceResult){
             Debug.Log("Player wins");
-            spellGameData.dataInstance.spellObjectStore.setPlayerSelected(false);
-            spellGameData.dataInstance.spellObjectStore.setEnemySelected(false);
             spellGameData.dataInstance.spellObjectStore.moveSpell();
             spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             hideUI();
@@ -91,8 +89,6 @@ public class diceGameScript : MonoBehaviour
         else if (enemyValue == diceResult){
             Debug.Log("Enemy wins");
             spellGameData.dataInstance.spellObjectStore.moveSpell();
-            spellGameData.dataInstance.spellObjectStore.setPlayerSelected(false);
-            spellGameData.dataInstance.spellObjectStore.setEnemySelected(false);
             spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             hideUI();
         }
@@ -101,17 +97,14 @@ public class diceGameScript : MonoBehaviour
             //Reshow spell selection object
             spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             //Take away playerSelected and enemySelected from spell
-            spellGameData.dataInstance.spellObjectStore.setPlayerSelected(false);
-            spellGameData.dataInstance.spellObjectStore.setEnemySelected(false);
             //Hide the UI
             hideUI();
         }
-
     }
 
     //Dice roll method
     public int rollDice(){
-        Debug.Log("roll dice");
+        //Debug.Log("roll dice");
         int resultDice = Random.Range(1,7);
         return resultDice;
     }

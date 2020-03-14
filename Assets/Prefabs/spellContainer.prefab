@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 3304276023895852938}
   m_Layer: 5
   m_Name: spellContainer
-  m_TagString: Untagged
+  m_TagString: Spell Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
