@@ -15,25 +15,25 @@ public class AICombatScript
         //
 
         //Check if value will give us a valid spell
-        while (spellSelection > spellGameData.allSpellsInPool.Count - 1){
+        while (spellSelection > spellGameData.dataInstance.allSpellsInPool.Count - 1){
             spellSelection = Random.Range(0, 6);
         }
 
         //Get name of spellContainer that the AI selected
-        string spellName = spellGameData.allSpellsInPool[spellSelection];
+        string spellName = spellGameData.dataInstance.allSpellsInPool[spellSelection];
        
         //Get the actual spellContainer object itself 
         GameObject spell = GameObject.Find(spellName);
         spellScript spellObject = spell.GetComponent<spellScript>();
 
         //Store spellContainer object into spellGameData
-        spellGameData.spellObjectStore = spellObject;
+        spellGameData.dataInstance.spellObjectStore = spellObject;
         
         //Set enemySelected to true
         spellObject.setEnemySelected(true);
 
         //Increment turn counter in spellGameData to signify new round of activity
-        spellGameData.turnCounter++;
+        spellGameData.dataInstance.turnCounter++;
 
     }
 

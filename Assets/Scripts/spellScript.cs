@@ -14,23 +14,23 @@ public class spellScript : MonoBehaviour
     void Start()
     {
         Debug.Log("Step 1: Start");
-        spellGameData.allSpellsInPool.Add(gameObject.name);
+        spellGameData.dataInstance.allSpellsInPool.Add(gameObject.name);
         playerSelected = false;
         enemySelected = false;
-        lastTurnCount = spellGameData.turnCounter; 
+        lastTurnCount = spellGameData.dataInstance.turnCounter; 
     }
 
     // Update is called once per frame
     void Update()
     {   
         //Check if all spells have been removed; if so, exit to new scene
-        if (spellGameData.allSpellsInPool.Count == 0){
+        if (spellGameData.dataInstance.allSpellsInPool.Count == 0){
             //exit script
         }
 
         //Enemy has made their move
         //Decision time much begin
-        if(lastTurnCount != spellGameData.turnCounter)
+        if(lastTurnCount != spellGameData.dataInstance.turnCounter)
         {
             if ( (playerSelected == true) & (enemySelected == true) ){
                 Debug.Log("Both selected same spell");
@@ -53,7 +53,7 @@ public class spellScript : MonoBehaviour
             }
         }
         //Increment lastTurnCount to match with global turnCounter
-        lastTurnCount = spellGameData.turnCounter; 
+        lastTurnCount = spellGameData.dataInstance.turnCounter; 
     }
 
     // public void ClickText(){

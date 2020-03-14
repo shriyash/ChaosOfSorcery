@@ -81,28 +81,28 @@ public class diceGameScript : MonoBehaviour
         //Player wins; call moveSpell to player slot
         if (playerTextII == diceResult){
             Debug.Log("Player wins");
-            spellGameData.spellObjectStore.setPlayerSelected(false);
-            spellGameData.spellObjectStore.setEnemySelected(false);
-            spellGameData.spellObjectStore.moveSpell();
-            spellGameData.spellObjectStore.transform.parent.gameObject.SetActive(true);
+            spellGameData.dataInstance.spellObjectStore.setPlayerSelected(false);
+            spellGameData.dataInstance.spellObjectStore.setEnemySelected(false);
+            spellGameData.dataInstance.spellObjectStore.moveSpell();
+            spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             hideUI();
         }
         //Enemy wins; call moveSpell to enemy Slot
         else if (enemyValue == diceResult){
             Debug.Log("Enemy wins");
-            spellGameData.spellObjectStore.moveSpell();
-            spellGameData.spellObjectStore.setPlayerSelected(false);
-            spellGameData.spellObjectStore.setEnemySelected(false);
-            spellGameData.spellObjectStore.transform.parent.gameObject.SetActive(true);
+            spellGameData.dataInstance.spellObjectStore.moveSpell();
+            spellGameData.dataInstance.spellObjectStore.setPlayerSelected(false);
+            spellGameData.dataInstance.spellObjectStore.setEnemySelected(false);
+            spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             hideUI();
         }
         else { //If no one wins, we move on to the next round
             Debug.Log("No one wins");
             //Reshow spell selection object
-            spellGameData.spellObjectStore.transform.parent.gameObject.SetActive(true);
+            spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             //Take away playerSelected and enemySelected from spell
-            spellGameData.spellObjectStore.setPlayerSelected(false);
-            spellGameData.spellObjectStore.setEnemySelected(false);
+            spellGameData.dataInstance.spellObjectStore.setPlayerSelected(false);
+            spellGameData.dataInstance.spellObjectStore.setEnemySelected(false);
             //Hide the UI
             hideUI();
         }

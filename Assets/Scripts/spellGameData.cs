@@ -2,20 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class spellGameData
+public class spellGameData : MonoBehaviour
 {
+    public static spellGameData dataInstance;
+
+    private void Awake()
+    {
+        dataInstance = this;
+    }
+
     //Will increment after enemy takes a turn
-    public static int turnCounter = 0;
-    public static bool diceGamePlaying = false;
+    public int turnCounter = 0;
+    public bool diceGamePlaying = false;
 
     //Holds the spell chosen by the AI, since we should only reference this when the player also chooses it
-    public static spellScript spellObjectStore; 
+    public spellScript spellObjectStore; 
 
-    public static List<string> allSpellsInPool = new List<string>(); 
+    public List<string> allSpellsInPool = new List<string>(); 
 
-    public static List<string> spellsForPlayer = new List<string>();
+    public List<string> spellsForPlayer = new List<string>();
 
-    public static List<string> spellsForEnemy = new List<string>();
+    public List<string> spellsForEnemy = new List<string>();
 
     //Any data related to spells within the scene will go here
 
