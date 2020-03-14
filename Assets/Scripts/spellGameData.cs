@@ -8,6 +8,9 @@ public static class spellGameData
     public static int turnCounter = 0;
     public static bool diceGamePlaying = false;
 
+    //Holds the spell chosen by the AI, since we should only reference this when the player also chooses it
+    public static spellScript spellObjectStore; 
+
     public static List<string> allSpellsInPool = new List<string>(); 
 
     public static List<string> spellsForPlayer = new List<string>();

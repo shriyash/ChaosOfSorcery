@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class AICombatScript
 {
@@ -8,9 +9,9 @@ public class AICombatScript
     //Function for having the AI make their spell choice
     public static void AISpellChoice(){
 
+        Debug.Log("AI spell selection");
         //Select a random spell choice between 0 and 5 inclusive
         spellSelection = Random.Range(0, 6);
-        Debug.Log("AI spell selection " + spellSelection);
         //
 
         //Check if value will give us a valid spell
@@ -24,6 +25,9 @@ public class AICombatScript
         //Get the actual spellContainer object itself 
         GameObject spell = GameObject.Find(spellName);
         spellScript spellObject = spell.GetComponent<spellScript>();
+
+        //Store spellContainer object into spellGameData
+        spellGameData.spellObjectStore = spellObject;
         
         //Set enemySelected to true
         spellObject.setEnemySelected(true);
@@ -35,6 +39,7 @@ public class AICombatScript
 
     //Gets AI's guess for the dice game
     public static int AIDiceGuess(){
+        Debug.Log("AI guess");
         diceGuess = Random.Range(1,7);
         return diceGuess;
     }

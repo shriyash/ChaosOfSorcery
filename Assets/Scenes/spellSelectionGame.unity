@@ -686,6 +686,8 @@ MonoBehaviour:
   enemyInput: {fileID: 2083775524}
   result: {fileID: 842223487}
   playerText: {fileID: 1395642346}
+  enemyText: {fileID: 98563746}
+  diceVariable: {fileID: 842223489}
 --- !u!1001 &318702081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1015,7 +1017,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 269277787}
-        m_MethodName: getPlayerInput
+        m_MethodName: DiceGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
