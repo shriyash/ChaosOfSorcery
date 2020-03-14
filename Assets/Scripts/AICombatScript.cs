@@ -8,11 +8,8 @@ public class AICombatScript
 
     //Function for having the AI make their spell choice
     public static void AISpellChoice(){
-
-        Debug.Log("AI spell selection");
         //Select a random spell choice between 0 and 5 inclusive
         spellSelection = Random.Range(0, 6);
-        //
 
         //Check if value will give us a valid spell
         while (spellSelection > spellGameData.dataInstance.allSpellsInPool.Count - 1){
@@ -24,6 +21,7 @@ public class AICombatScript
        
         //Get the actual spellContainer object itself 
         GameObject spell = GameObject.Find(spellName);
+        Debug.Log("AI spell selection: " + spellName);
         spellScript spellObject = spell.GetComponent<spellScript>();
 
         //Store spellContainer object into spellGameData

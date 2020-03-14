@@ -13,7 +13,7 @@ public class spellScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Step 1: Start");
+        //Debug.Log("Step 1: Start");
         spellGameData.dataInstance.allSpellsInPool.Add(gameObject.name);
         playerSelected = false;
         enemySelected = false;
@@ -32,24 +32,27 @@ public class spellScript : MonoBehaviour
         //Decision time much begin
         if(lastTurnCount != spellGameData.dataInstance.turnCounter)
         {
-            if ( (playerSelected == true) & (enemySelected == true) ){
-                Debug.Log("Both selected same spell");
+            if ( (playerSelected == true) && (enemySelected == true) ){
+                playerSelected = false;
+                enemySelected = false;
+                //Debug.Log("Both selected same spell");
                 //Blocks player from clicking on another spells while dice game is ongoing
                 gameObject.transform.parent.gameObject.SetActive(false);
                 //Launches dice game
                 diceGameScript diceScript = GameObject.Find("diceGame").GetComponent<diceGameScript>();
                 diceScript.SetUpDiceGame();
+                
             }
             else if ((playerSelected == true)){
-                Debug.Log("Only Player selected spell");
+                //Debug.Log("Only Player selected spell");
 
             }
             else if ((enemySelected == true)){
-                Debug.Log("Only Enemy selected spell");
+                //Debug.Log("Only Enemy selected spell");
             }
             else {
                 //Nothing happens
-                Debug.Log("else Update");
+                //Debug.Log("else Update");
             }
         }
         //Increment lastTurnCount to match with global turnCounter
@@ -64,7 +67,7 @@ public class spellScript : MonoBehaviour
 
     //Activates when player presses a spell button
     public void playerButtonPressed(){
-        Debug.Log("step playerButtonPressed");
+        //Debug.Log("step playerButtonPressed");
         playerSelected = true;
         //Call enemy selection in AICombatScript
         AICombatScript.AISpellChoice();
@@ -78,12 +81,12 @@ public class spellScript : MonoBehaviour
 
     //Necessary to ensure encapsulation, but still set enemySelected boolean in AICombatScript
     public void setEnemySelected(bool selected){
-        Debug.Log("setEnemy active");
+        //Debug.Log("setEnemy active");
         enemySelected = selected;
     }
 
     public void setPlayerSelected(bool selected){
-        Debug.Log("setPlayer active");
+        //Debug.Log("setPlayer active");
         playerSelected = selected;
     }
 
