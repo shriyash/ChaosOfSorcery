@@ -15,9 +15,9 @@ public class spellGameData : MonoBehaviour
 
     public List<GameObject> allSpellsInPool = new List<GameObject>(); 
 
-    public List<string> spellsForPlayer = new List<string>();
+    public List<GameObject> spellsForPlayer = new List<GameObject>();
 
-    public List<string> spellsForEnemy = new List<string>();
+    public List<GameObject> spellsForEnemy = new List<GameObject>();
 
     private void Awake()
     {

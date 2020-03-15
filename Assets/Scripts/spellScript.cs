@@ -10,6 +10,9 @@ public class spellScript : MonoBehaviour
     private int lastTurnCount;
     private bool assigned;
 
+    private int[,] initialPositions = {{-292, 0}, {280, 0}};
+    private int increment = 32;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,12 +55,12 @@ public class spellScript : MonoBehaviour
             }
             else if ((playerSelected == true)){
 
-                moveSpell();
+                moveSpell("player");
                 //Debug.Log("Only Player selected spell");
 
             }
             else if ((enemySelected == true)){
-                moveSpell();
+                moveSpell("enemy");
                 //Debug.Log("Only Enemy selected spell");
             }
             else {
@@ -89,8 +92,20 @@ public class spellScript : MonoBehaviour
 
     //move spell to respective slot
     //remove gameobject name from list
-    public void moveSpell(){
+    //May need to use "anchored position" attribute
+    public void moveSpell(string holder){
+        RectTransform spellMover = GetComponent<RectTransform>();
+
+        if (holder == "player"){
+            spellMover.anchoredPosition = new Vector2(initialPositions[0,0], initialPositions[0,1]-(increment*spellGameData.dataInstance.spellsForPlayer.Count));
+            spellGameData.dataInstance.spellsForPlayer.Add(this.gameObject);
+        }  
+        else {
+            spellMover.anchoredPosition = new Vector2(initialPositions[1,0], initialPositions[1,1]-(increment*spellGameData.dataInstance.spellsForPlayer.Count));
+            spellGameData.dataInstance.spellsForEnemy.Add(this.gameObject);
+        } 
         spellGameData.dataInstance.allSpellsInPool.Remove(this.gameObject); //Removes this spell from the active pool; comment out this line to allow repeat selections
+
     }
 
     //Necessary to ensure encapsulation, but still set enemySelected boolean in AICombatScript

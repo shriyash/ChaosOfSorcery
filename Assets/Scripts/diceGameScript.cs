@@ -81,14 +81,14 @@ public class diceGameScript : MonoBehaviour
         //Player wins; call moveSpell to player slot
         if (playerTextII == diceResult){
             Debug.Log("Player wins");
-            spellGameData.dataInstance.spellObjectStore.moveSpell();
+            spellGameData.dataInstance.spellObjectStore.moveSpell("player");
             spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             hideUI();
         }
         //Enemy wins; call moveSpell to enemy Slot
         else if (enemyValue == diceResult){
             Debug.Log("Enemy wins");
-            spellGameData.dataInstance.spellObjectStore.moveSpell();
+            spellGameData.dataInstance.spellObjectStore.moveSpell("enemy");
             spellGameData.dataInstance.spellObjectStore.transform.parent.gameObject.SetActive(true);
             hideUI();
         }
