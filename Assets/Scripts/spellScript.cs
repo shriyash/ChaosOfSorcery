@@ -95,17 +95,21 @@ public class spellScript : MonoBehaviour
     //May need to use "anchored position" attribute
     public void moveSpell(string holder){
         RectTransform spellMover = GetComponent<RectTransform>();
+        Debug.Log("Move called for " + this.gameObject);
 
-        if (holder == "player"){
+        if (holder.Equals("player")){
+            Debug.Log("Player position: " + initialPositions[0,0] + ", " +  (initialPositions[0,1]-(increment*spellGameData.dataInstance.spellsForPlayer.Count)));
             spellMover.anchoredPosition = new Vector2(initialPositions[0,0], initialPositions[0,1]-(increment*spellGameData.dataInstance.spellsForPlayer.Count));
             spellGameData.dataInstance.spellsForPlayer.Add(this.gameObject);
         }  
         else {
-            spellMover.anchoredPosition = new Vector2(initialPositions[1,0], initialPositions[1,1]-(increment*spellGameData.dataInstance.spellsForPlayer.Count));
+            Debug.Log("Enemy position: " + initialPositions[1,0] + ", " +  (initialPositions[1,1]-(increment*spellGameData.dataInstance.spellsForEnemy.Count)));
+            spellMover.anchoredPosition = new Vector2(initialPositions[1,0], initialPositions[1,1]-(increment*spellGameData.dataInstance.spellsForEnemy.Count));
             spellGameData.dataInstance.spellsForEnemy.Add(this.gameObject);
         } 
         spellGameData.dataInstance.allSpellsInPool.Remove(this.gameObject); //Removes this spell from the active pool; comment out this line to allow repeat selections
-
+        playerSelected = false;
+        enemySelected = false;
     }
 
     //Necessary to ensure encapsulation, but still set enemySelected boolean in AICombatScript
