@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/DefenseGame.unity
+    path: Assets/Scenes/DefenseGame.unity
     guid: 1f0906b0c970d447d83fd4d7be1178af
   m_configObjects: {}
