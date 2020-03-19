@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 522620642175491433}
   m_Layer: 0
   m_Name: markPlane
-  m_TagString: Untagged
+  m_TagString: Open Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
