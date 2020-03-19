@@ -6,14 +6,15 @@ public class tileScript : MonoBehaviour
 {
     bool isOpen = true;
     Renderer colorRenderer;
-    private Color regularColor, selectedColor;
+    public Material white;
+    private Material original;
 
     // Start is called before the first frame update
     void Start()
     {
         colorRenderer = this.gameObject.GetComponent<Renderer>();
-        regularColor = this.gameObject.GetComponent<Renderer>().material.GetColor("_Color");
-        selectedColor = Color.magenta;
+        original = colorRenderer.material;
+        colorRenderer.material = white;
     }
 
     //Changes the color of the box on hover
@@ -21,7 +22,7 @@ public class tileScript : MonoBehaviour
         if (isOpen)
         {
             //Can change the color here
-            colorRenderer.material.SetColor("_Color", Color.yellow);
+            colorRenderer.material = original;
         }
     }
 
@@ -29,7 +30,7 @@ public class tileScript : MonoBehaviour
     void OnMouseExit(){
         if (isOpen) 
         { 
-            colorRenderer.material.SetColor("_Color", regularColor); 
+             colorRenderer.material = white;
         }
     }
 
@@ -41,7 +42,7 @@ public class tileScript : MonoBehaviour
 
     public void SelectTile() 
     {
-        colorRenderer.material.SetColor("_Color", selectedColor);
+        colorRenderer.material = original;
         tag = "Untagged";
         isOpen = false;
     }
