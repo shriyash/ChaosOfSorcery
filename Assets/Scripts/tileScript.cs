@@ -7,6 +7,7 @@ public class tileScript : MonoBehaviour
     bool isOpen = true;
     Renderer colorRenderer;
     private Color regularColor, selectedColor;
+    public int row, column;
 
     // Start is called before the first frame update
     void Start()
