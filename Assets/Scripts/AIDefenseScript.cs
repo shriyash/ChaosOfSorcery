@@ -17,13 +17,15 @@ public class AIDefenseScript : MonoBehaviour
     // Update is called once per frame
     public void TakeTurn() 
     {
-        int[,] ZERO_ARRAY = new int[5, 5]
+        int[,] ZERO_ARRAY = new int[7, 7] //-1 is out of bounds, 1 is blocked, 0 is open
         {
-            { 1, 1, 1, 1, 1 },
-            { 1, 1, 1, 1, 1 },
-            { 1, 1, 1, 1, 1 },
-            { 1, 1, 1, 1, 1 },
-            { 1, 1, 1, 1, 1 },
+            { -1, -1, -1, -1, -1, -1, -1 },
+            { -1, -1, -1, -1, -1, -1, -1 },
+            { -1, -1, 1, 1, 1, -1, -1 },
+            { -1, -1, 1, 1, 1, -1, -1 },
+            { -1, -1, 1, 1, 1, -1, -1 },
+            { -1, -1, -1, -1, -1, -1, -1 },
+            { -1, -1, -1, -1, -1, -1, -1 },
         };
 
         openTiles = new List<GameObject>();
@@ -33,7 +35,7 @@ public class AIDefenseScript : MonoBehaviour
         {
             openTiles.Add(go);
             tileScript ts = go.GetComponent<tileScript>();
-            posArray[ts.row, ts.column] = 0;
+            posArray[ts.row + 1, ts.column + 1] = 0;
         }
 
         if (openTiles.Count == 0)
@@ -51,54 +53,61 @@ public class AIDefenseScript : MonoBehaviour
         List<GameObject> goodSpaces = new List<GameObject>();
 
         //this is bad code do not look :(
-        for(int i = 1; i < posArray.GetLength(0); i++) 
+        for(int i = 2; i < posArray.GetLength(0) - 1; i++) 
         {
-            for (int j = 1; j < posArray.GetLength(1); j++)
+            for (int j = 2; j < posArray.GetLength(1) - 1; j++)
             {
                 if (posArray[i, j] == 0)
                 {
+                    Debug.Log("Good so far");
                     //Check vertical
-                    if (posArray[i - 1, j] == 0 || posArray[i + 1, j] == 0)
+                    if (
+                        (posArray[i - 1, j] == 0 || (posArray[i - 2, j] == 0)) 
+                        || (posArray[i + 1, j] == 0 || (posArray[i + 2, j] == 0)) 
+                          )
                     {
                         //Check horizontal
-                        if (posArray[i, j - 1] == 0 || posArray[i, j + 1] == 0)
+                        if (
+                        (posArray[i, j - 1] == 0 || (posArray[i, j - 2] == 0))
+                        || (posArray[i, j + 1] == 0 || (posArray[i, j] + 2 == 0))
+                        )
                         {
                             //Check diagonal if needed
-                            if (i == 1 && j == 1)
+                            if (i == 2 && j == 2)
                             {
-                                if (posArray[2, 2] == 0 || posArray[3, 3] == 0)
+                                if (posArray[3, 3] == 0 || posArray[4, 4] == 0)
                                 {
                                     goodSpaces.Add(FindByCoordinates(i, j));
                                 }
                             }
 
-                            else if (i == 1 && j == 3)
+                            else if (i == 2 && j == 4)
                             {
-                                if (posArray[2, 2] == 0 || posArray[1, 3] == 0)
+                                if (posArray[3, 3] == 0 || posArray[4, 3] == 0)
                                 {
                                     goodSpaces.Add(FindByCoordinates(i, j));
                                 }
                             }
 
-                            else if (i == 3 && j == 1)
+                            else if (i == 4 && j == 2)
                             {
-                                if (posArray[2, 2] == 0 || posArray[1, 3] == 0)
+                                if (posArray[3, 3] == 0 || posArray[2, 4] == 0)
                                 {
                                     goodSpaces.Add(FindByCoordinates(i, j));
                                 }
                             }
 
-                            else if (i == 3 && j == 3)
+                            else if (i == 4 && j == 4)
                             {
-                                if (posArray[2, 2] == 0 || posArray[1, 1] == 0)
+                                if (posArray[3, 3] == 0 || posArray[2, 2] == 0)
                                 {
                                     goodSpaces.Add(FindByCoordinates(i, j));
                                 }
                             }
 
-                            else if (i == 2 && j == 2) 
+                            else if (i == 3 && j == 3) 
                             {
-                                if ((posArray[1, 1] == 0 || posArray[3, 3] == 0) && (posArray[1, 3] == 0 || posArray[3, 1] == 0)) 
+                                if ((posArray[2, 2] == 0 || posArray[4, 4] == 0) && (posArray[2, 4] == 0 || posArray[4, 2] == 0)) 
                                 {
                                     goodSpaces.Add(FindByCoordinates(i, j));
                                 }
@@ -133,7 +142,7 @@ public class AIDefenseScript : MonoBehaviour
         foreach (GameObject go in GameObject.FindGameObjectsWithTag("Open Tile")) 
         {
             tileScript ts = go.GetComponent<tileScript>();
-            if (ts.row == i && ts.column == j)
+            if (ts.row == i -1  && ts.column == j - 1)
             {
                 return go;
             }
