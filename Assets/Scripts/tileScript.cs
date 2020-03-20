@@ -50,5 +50,6 @@ public class tileScript : MonoBehaviour
         colorRenderer.material = original;
         tag = "Untagged";
         isOpen = false;
+        DefenseDataScript.ChangeTile(this.row, this.column);
     }
 }
