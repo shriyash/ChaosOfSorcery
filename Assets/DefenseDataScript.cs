@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DefenseDataScript : MonoBehaviour
 {
     //Keeps track of the row count for vertical rows
     private static int vertRowCount = 0;
+    public static DefenseDataScript defenseData;
+    public bool gameDone = false;
     //Array to hold values for selected and unselected tiles
     //0 means unselected tile
     private static int[,] tileArray = {
@@ -14,14 +18,12 @@ public class DefenseDataScript : MonoBehaviour
         {0, 0, 0},
     };
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        defenseData = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CheckLose()
     {
         //This seems massively inefficent, but we'll see
         //May be able to optimize via an iterative approach?
@@ -44,7 +46,7 @@ public class DefenseDataScript : MonoBehaviour
                 }
             }
             if (vertRowCount == 3){
-                Debug.Log("Player looses");
+                defenseData.EndGame(false);
                 //Would need to stop AI from picking and end update
             }
             else {
@@ -69,7 +71,7 @@ public class DefenseDataScript : MonoBehaviour
             }
         }
         //Need to put exit condition here
-        Debug.Log("Player has lost in horizontal");
+        defenseData.EndGame(false);
     }
 
     public static void checkDiagonal(int corner){
@@ -79,8 +81,33 @@ public class DefenseDataScript : MonoBehaviour
         }
         else {
             if (((tileArray[2, 0] == 1) && (corner == 2)) || ((tileArray[2,2]== 1) && (corner == 0))) {
-                Debug.Log("Player lost on diag");
+                defenseData.EndGame(false);
             }
         }
     }
+
+    public void EndGame(bool playerWon) 
+    {
+        gameDone = true;
+        StartCoroutine("EndGameCoroutine", playerWon);
+    }
+
+    public IEnumerator EndGameCoroutine(bool playerWon) 
+    {
+        Text endText = GameObject.Find("End Text").GetComponent<Text>();
+        if (playerWon) 
+        {
+            endText.text = "You defended yourself against your opponent! You get a HEALTH BONUS!";
+        }
+
+        else
+        {
+            endText.text = "Your opponent mounted a stronger defense! The enemy gets a HEALTH BONUS!";
+        }
+
+        yield return new WaitForSeconds(4f);
+        //Change to next scene
+        SceneManager.LoadScene("SampleScene");
+    }
+
 }
