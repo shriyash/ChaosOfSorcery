@@ -38,6 +38,13 @@ public class spellGameData : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (dataInstance.allSpellsInPool.Count == 0)
+        {
+            StartCoroutine(spellGameData.dataInstance.ChangeScene());
+        }
+    }
     //Launches to the defense game after waiting for 3 seconds
     public IEnumerator ChangeScene(){
         float countDown = 3;

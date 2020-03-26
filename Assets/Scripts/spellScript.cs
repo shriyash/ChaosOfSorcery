@@ -104,11 +104,6 @@ public class spellScript : MonoBehaviour
         spellGameData.dataInstance.allSpellsInPool.Remove(this.gameObject); //Removes this spell from the active pool; comment out this line to allow repeat selections
         playerSelected = false;
         enemySelected = false;
-
-        //Check if all spells in pool are removed; then, is time to move to the defense game
-        if (spellGameData.dataInstance.allSpellsInPool.Count == 0){
-            StartCoroutine(spellGameData.dataInstance.ChangeScene());
-        }
     }
 
     //Necessary to ensure encapsulation, but still set enemySelected boolean in AICombatScript
