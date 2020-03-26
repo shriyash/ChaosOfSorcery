@@ -53,13 +53,13 @@ public class spellGameData : MonoBehaviour
 
         //Trying to do a countdown timer
         while(countDown > 0){
-            Debug.Log("endCount: " + endCount);
-            //endCount.text = countDown.ToString();
-        //     yield return new WaitForSeconds(1.0f);
-            Debug.Log("Countdown: " + countDown.ToString());
+            endCount.text = countDown.ToString();
+            yield return new WaitForSeconds(1.5f);
             countDown--;
+            //Gets rid of weird glitching effect
+            endCount.SetAllDirty();
          }
-        yield return new WaitForSeconds(2.0f);
+        //yield return new WaitForSeconds(2.0f);
         SceneManager.LoadScene("DefenseGame");
     }
 
