@@ -51,18 +51,7 @@ public class diceGameScript : MonoBehaviour
         winner.SetActive(true);
     }
 
-    /*
-    Dice game script; 
-    Will be called once user inputs their value
-    Will include
-        - taking input from playerInput value
-        - comparing to AI value
-        - rolling dice/generating random number
-        - conditionals for various outcomes
-    */
     public void SetUpDiceGame() {
-        //Shows input blocks
-        //Debug.Log("showUI");
         showUI();
         //Generates AI's dice value
         enemyValue = AICombatScript.ai.AIDiceGuess();
@@ -121,7 +110,6 @@ public class diceGameScript : MonoBehaviour
 
     //Dice roll method
     public int rollDice(){
-        //Debug.Log("roll dice");
         int resultDice = Random.Range(1,7);
         return resultDice;
     }

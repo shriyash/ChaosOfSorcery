@@ -14,7 +14,6 @@ public class AICombatScript : MonoBehaviour
 
     //Function for having the AI make their spell choice
     public void AISpellChoice(){
-        Debug.Log(spellGameData.dataInstance.allSpellsInPool.Count);
         //Select a random spell choice between 0 and 5 inclusive
         spellSelection = Random.Range(0, spellGameData.dataInstance.allSpellsInPool.Count - 1);
         //Get name of spellContainer that the AI selected
@@ -37,7 +36,6 @@ public class AICombatScript : MonoBehaviour
 
     //Gets AI's guess for the dice game
     public int AIDiceGuess(){
-        //Debug.Log("AI guess");
         diceGuess = Random.Range(1,7);
         return diceGuess;
     }

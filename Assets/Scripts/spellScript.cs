@@ -72,12 +72,6 @@ public class spellScript : MonoBehaviour
         lastTurnCount = spellGameData.dataInstance.turnCounter; 
     }
 
-    // public void ClickText(){
-    //     //How we access a child
-    //     //Test case
-    //     Debug.Log("clicked " + gameObject.transform.GetChild(0).gameObject.name);
-    // }
-
     //Activates when player presses a spell button
     public void playerButtonPressed(){
         if (!spellGameData.dataInstance.diceGamePlaying) //Make sure the player can't press any buttons while the game is playing
@@ -110,6 +104,11 @@ public class spellScript : MonoBehaviour
         spellGameData.dataInstance.allSpellsInPool.Remove(this.gameObject); //Removes this spell from the active pool; comment out this line to allow repeat selections
         playerSelected = false;
         enemySelected = false;
+
+        //Check if all spells in pool are removed; then, is time to move to the defense game
+        if (spellGameData.dataInstance.allSpellsInPool.Count == 0){
+            StartCoroutine(spellGameData.dataInstance.ChangeScene());
+        }
     }
 
     //Necessary to ensure encapsulation, but still set enemySelected boolean in AICombatScript
