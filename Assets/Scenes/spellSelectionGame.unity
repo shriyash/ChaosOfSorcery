@@ -139,6 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1106ca9345f4b4b43968b8548b9dc2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellLevel: 2
+  spellType: 1
 --- !u!1 &98563744
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1106ca9345f4b4b43968b8548b9dc2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellLevel: 3
+  spellType: 3
 --- !u!1 &219861603
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +516,7 @@ PrefabInstance:
     - target: {fileID: 1828926830966665644, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
       propertyPath: m_Text
-      value: Spell 3
+      value: LIGHTNING lvl 2
       objectReference: {fileID: 0}
     - target: {fileID: 3108698759929492265, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
@@ -742,7 +746,7 @@ PrefabInstance:
     - target: {fileID: 1828926830966665644, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
       propertyPath: m_Text
-      value: Spell 6
+      value: LIGHTNING lvl 3
       objectReference: {fileID: 0}
     - target: {fileID: 3108698759929492265, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
@@ -1061,7 +1065,7 @@ PrefabInstance:
     - target: {fileID: 453381263445446624, guid: fe23479c409f54d61b4c52dd8090f196,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 178
+      value: 129
       objectReference: {fileID: 0}
     - target: {fileID: 453381263445446624, guid: fe23479c409f54d61b4c52dd8090f196,
         type: 3}
@@ -1363,7 +1367,7 @@ PrefabInstance:
     - target: {fileID: 1828926830966665644, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
       propertyPath: m_Text
-      value: Spell 5
+      value: ICE lvl 3
       objectReference: {fileID: 0}
     - target: {fileID: 3108698759929492265, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
@@ -1858,6 +1862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1106ca9345f4b4b43968b8548b9dc2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellLevel: 3
+  spellType: 1
 --- !u!1001 &1269438482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1868,7 +1874,7 @@ PrefabInstance:
     - target: {fileID: 1828926830966665644, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
       propertyPath: m_Text
-      value: Spell 2
+      value: ICE lvl 2
       objectReference: {fileID: 0}
     - target: {fileID: 3108698759929492265, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
@@ -2033,6 +2039,49 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1269438482}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1302236786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302236788}
+  - component: {fileID: 1302236787}
+  m_Layer: 0
+  m_Name: BattleData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1302236787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302236786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ba680a25dfa40458cf8bfa908d3688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1302236788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302236786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 715.23425, y: 501.41214, z: -2.079834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341588462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,7 +2169,7 @@ PrefabInstance:
     - target: {fileID: 1828926830966665644, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
       propertyPath: m_Text
-      value: 'Spell 1
+      value: 'FIRE lvl 2
 
 '
       objectReference: {fileID: 0}
@@ -2464,6 +2513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1106ca9345f4b4b43968b8548b9dc2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellLevel: 2
+  spellType: 2
 --- !u!1 &1432229222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +2797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1106ca9345f4b4b43968b8548b9dc2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellLevel: 3
+  spellType: 2
 --- !u!1 &1888151856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,6 +2900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1106ca9345f4b4b43968b8548b9dc2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellLevel: 2
+  spellType: 3
 --- !u!1 &1929114525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,7 +3211,7 @@ PrefabInstance:
     - target: {fileID: 1828926830966665644, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
       propertyPath: m_Text
-      value: Spell 4
+      value: FIRE lvl 3
       objectReference: {fileID: 0}
     - target: {fileID: 3108698759929492265, guid: a6a9afcf337324a75b2d2af5991e64b8,
         type: 3}
@@ -3378,10 +3433,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 524890125813968560, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_Text
+      value: LIGHTNING lvl 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 524890125813968560, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 924640753823001459, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -138.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 948692982128643822, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -138.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701079268716830886, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_Text
+      value: ICE lvl 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701079268716830886, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294767672113594334, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -138.7
+      objectReference: {fileID: 0}
     - target: {fileID: 5069831479323205153, guid: fe23479c409f54d61b4c52dd8090f196,
         type: 3}
       propertyPath: m_Name
       value: playerlvl1SplBlck
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548935367877489929, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_Text
+      value: FIRE lvl 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548935367877489929, guid: fe23479c409f54d61b4c52dd8090f196,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe23479c409f54d61b4c52dd8090f196, type: 3}
