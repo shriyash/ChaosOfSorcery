@@ -125,15 +125,20 @@ public class AIDefenseScript : MonoBehaviour
         }
 
         //Check if there are any winning moves
-        if (goodSpaces.Count > 0)
+        if (!DefenseDataScript.defenseData.gameDone)
         {
-            GameObject chosenTile = goodSpaces.ToArray()[Random.Range(0, goodSpaces.Count)];
-            Debug.Log(chosenTile.name);
-            chosenTile.GetComponent<tileScript>().SelectTile();
-        }
-        else 
-        {
-            Debug.Log("U R win");
+            if (goodSpaces.Count > 0)
+            {
+                GameObject chosenTile = goodSpaces.ToArray()[Random.Range(0, goodSpaces.Count)];
+                chosenTile.GetComponent<tileScript>().SelectTile();
+            }
+            else
+            {
+                GameObject chosenTile = openTiles.ToArray()[Random.Range(0, openTiles.Count)];
+                chosenTile.GetComponent<tileScript>().SelectTile();
+                DefenseDataScript.defenseData.EndGame(true);
+                Debug.Log("asdfasfe");
+            }
         }
     }
 
