@@ -107,7 +107,7 @@ public class DefenseDataScript : MonoBehaviour
 
         yield return new WaitForSeconds(4f);
         //Change to next scene
-        SceneManager.LoadScene("Attack Game");
+        SceneManager.LoadScene("AttackGame");
     }
 
 }
