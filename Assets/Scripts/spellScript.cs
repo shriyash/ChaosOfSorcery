@@ -13,6 +13,9 @@ public class spellScript : MonoBehaviour
     private int[,] initialPositions = {{-292, 0}, {280, 0}};
     private int increment = 32;
 
+    public int spellLevel;
+    public SpellHolder.SPELL_TYPE spellType;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,11 +98,13 @@ public class spellScript : MonoBehaviour
             Debug.Log("Player position: " + initialPositions[0,0] + ", " +  (initialPositions[0,1]-(increment*spellGameData.dataInstance.spellsForPlayer.Count)));
             spellMover.anchoredPosition = new Vector2(initialPositions[0,0], initialPositions[0,1]-(increment*spellGameData.dataInstance.spellsForPlayer.Count));
             spellGameData.dataInstance.spellsForPlayer.Add(this.gameObject);
+            BattleData.battleDatInstance.playerSpells.Add(new SpellHolder(spellType, spellLevel));
         }  
         else {
             Debug.Log("Enemy position: " + initialPositions[1,0] + ", " +  (initialPositions[1,1]-(increment*spellGameData.dataInstance.spellsForEnemy.Count)));
             spellMover.anchoredPosition = new Vector2(initialPositions[1,0], initialPositions[1,1]-(increment*spellGameData.dataInstance.spellsForEnemy.Count));
             spellGameData.dataInstance.spellsForEnemy.Add(this.gameObject);
+            BattleData.battleDatInstance.enemySpells.Add(new SpellHolder(spellType, spellLevel));
         } 
         spellGameData.dataInstance.allSpellsInPool.Remove(this.gameObject); //Removes this spell from the active pool; comment out this line to allow repeat selections
         playerSelected = false;
