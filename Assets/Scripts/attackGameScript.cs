@@ -14,6 +14,7 @@ public class attackGameScript : MonoBehaviour
     public Text eSpellSel;
 
     public Text winner;
+    public Text finalWinner;
 
     private int spellLaunched = 0;
     private int spellLaunchedWatch = 0;
@@ -28,6 +29,7 @@ public class attackGameScript : MonoBehaviour
     // There is an instance of the BattleData attached to the eventSystem. WE'll need to remove it before the final product is released
     void Start()
     {
+        finalWinner = GameObject.Find("Final Winner").GetComponent<Text>();
         //Get health for enemy and player
         eHealth.text = BattleData.battleDatInstance.enemyHealth.ToString();
         pHealth.text = BattleData.battleDatInstance.playerHealth.ToString();
@@ -53,10 +55,15 @@ public class attackGameScript : MonoBehaviour
     {
         if (BattleData.battleDatInstance != null && BattleData.battleDatInstance.enemySpells != null) 
         {
-            if (BattleData.battleDatInstance.enemySpells.Count > 0) 
+            if (BattleData.battleDatInstance.enemySpells.Count > 0)
             {
                 enemySelectedSpell = BattleData.battleDatInstance.enemySpells.ToArray()[Random.Range(0, BattleData.battleDatInstance.enemySpells.Count)];
-
+                BattleData.battleDatInstance.enemySpells.Remove(enemySelectedSpell);
+                compareSpells();
+            }
+            else 
+            {
+                Debug.Log("player wins");
             }
         }
     }
@@ -69,13 +76,36 @@ public class attackGameScript : MonoBehaviour
             spellLaunchedWatch++;
         }
 
-        if (BattleData.battleDatInstance.playerHealth == 0){
-            winner.text = "Enemy wins!";
+        if (BattleData.battleDatInstance.playerHealth <= 0) {
+            finalWinner.text = "Enemy wins!";
         }
-        else if (BattleData.battleDatInstance.enemyHealth == 0){
-            winner.text = "Player wins!";
+        else if (BattleData.battleDatInstance.enemyHealth <= 0) {
+            finalWinner.text = "Player wins!";
         }
-        
+        else if (BattleData.battleDatInstance.enemySpells.Count == 0)
+        {
+            if (BattleData.battleDatInstance.playerSpells.Count == 0)
+            {
+                finalWinner.text = "Both you and enemy ran out of spells! It's a DRAW!";
+            }
+            else
+            {
+                finalWinner.text = "The enemy ran out of spells! You WIN!";
+            }
+        }
+        else if (BattleData.battleDatInstance.playerSpells.Count == 0) 
+        {
+            finalWinner.text = "You ran out of spells! You LOSE!";
+        }
+
+        eHealth.text = BattleData.battleDatInstance.enemyHealth.ToString();
+        pHealth.text = BattleData.battleDatInstance.playerHealth.ToString();
+
+        if(enemySelectedSpell != null)
+            eSpellSel.text = enemySelectedSpell.ToString();
+
+        if (playerSelectedSpell != null)
+            pSpellSel.text = playerSelectedSpell.ToString();
     }
 
     public void compareSpells(){
@@ -92,7 +122,11 @@ public class attackGameScript : MonoBehaviour
         //Assumes the spell types are equal
         if (playerSpellType == enemySpellType){
 
-            if (playerSpellLevel > enemySpellLevel){
+            if (playerSpellLevel > enemySpellLevel)
+            {
+                winner.text = "Winner: YOU!";
+                Debug.Log("winner is you");
+
                 if (playerSpellLevel == 1){
                     BattleData.battleDatInstance.enemyHealth -= levelOneDamage;
                 }
@@ -104,6 +138,9 @@ public class attackGameScript : MonoBehaviour
                 }
             }
             else if (playerSpellLevel < enemySpellLevel){
+                winner.text = "Winner: ENEMY!";
+                Debug.Log("winner is they");
+
                 if (enemySpellLevel == 1){
                     BattleData.battleDatInstance.playerHealth -= levelOneDamage;
                 }
@@ -113,28 +150,34 @@ public class attackGameScript : MonoBehaviour
                 else {
                     BattleData.battleDatInstance.playerHealth -= levelThreeDamage;
                 }
+
             }
             else {
-                //Nothing happens?
+                winner.text = "Winner: DRAW!";
+                Debug.Log("winner is we");
             }
         }
         else if (playerSpellType == SpellHolder.SPELL_TYPE.FIRE){
             if (enemySpellType == SpellHolder.SPELL_TYPE.ICE){
                 //Player wins
                 BattleData.battleDatInstance.enemyHealth -= levelThreeDamage;
+                winner.text = "Winner: YOU!";
             }
             else {
                 //Player looses
+                winner.text = "Winner: ENEMY!";
                 BattleData.battleDatInstance.playerHealth -= levelThreeDamage;
             }
         }
         else if (playerSpellType == SpellHolder.SPELL_TYPE.ICE){
             if (enemySpellType == SpellHolder.SPELL_TYPE.LIGHTNING){
                 //Player wins
+                winner.text = "Winner: YOU!";
                 BattleData.battleDatInstance.enemyHealth -= levelThreeDamage;
             }
             else {
                 //Player looses
+                winner.text = "Winner: ENEMY!";
                 BattleData.battleDatInstance.playerHealth -= levelThreeDamage;
             }
         }
@@ -142,10 +185,12 @@ public class attackGameScript : MonoBehaviour
         else {
             if (enemySpellType == SpellHolder.SPELL_TYPE.FIRE){
                 //Player wins
+                winner.text = "Winner: YOU!";
                 BattleData.battleDatInstance.enemyHealth -= levelThreeDamage;
             }
             else {
                 //Player looses
+                winner.text = "Winner: ENEMY!";
                 BattleData.battleDatInstance.playerHealth -= levelThreeDamage;
             }
         }

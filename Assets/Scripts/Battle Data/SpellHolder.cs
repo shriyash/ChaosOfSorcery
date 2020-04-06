@@ -42,4 +42,9 @@ public class SpellHolder
     {
         return spellLevel;
     }
+
+    public override string ToString()
+    {
+        return GetSpellType() + " " + GetSpellLevel();
+    }
 }
