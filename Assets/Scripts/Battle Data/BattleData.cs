@@ -23,8 +23,8 @@ public class BattleData : MonoBehaviour
         else 
         {
             battleDatInstance = this;
-            playerHealth = 25;
-            enemyHealth = 25;
+            playerHealth = 15;
+            enemyHealth = 15;
             DontDestroyOnLoad(this);
 
             playerSpells.Add(new SpellHolder(SpellHolder.SPELL_TYPE.FIRE, 1));
