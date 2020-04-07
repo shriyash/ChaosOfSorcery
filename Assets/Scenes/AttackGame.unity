@@ -664,6 +664,16 @@ PrefabInstance:
       propertyPath: spellType
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4584972528574008079, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584972528574008079, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: spellType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
         type: 3}
       propertyPath: m_Text
@@ -671,6 +681,11 @@ PrefabInstance:
 
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
         type: 3}
@@ -2442,12 +2457,27 @@ PrefabInstance:
       propertyPath: spellType
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4584972528574008079, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: level
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584972528574008079, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: spellType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
         type: 3}
       propertyPath: m_Text
       value: 'Lightening 2
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
         type: 3}
@@ -2675,12 +2705,27 @@ PrefabInstance:
       propertyPath: spellType
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4584972528574008079, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584972528574008079, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: spellType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
         type: 3}
       propertyPath: m_Text
       value: 'Lightening 1
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 9031485587914566638, guid: fc5b6c608661041a7b9edf2c9f469144,
         type: 3}
