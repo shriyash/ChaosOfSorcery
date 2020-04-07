@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class attackGameScript : MonoBehaviour
 {
+    public static bool isDone = false;
     public Text pHealth;
 
     public Text eHealth;
@@ -75,27 +77,33 @@ public class attackGameScript : MonoBehaviour
             eHealth.text = BattleData.battleDatInstance.enemyHealth.ToString();
             spellLaunchedWatch++;
         }
-
+        Mathf.Clamp(BattleData.battleDatInstance.playerHealth, 0, 100);
+        Mathf.Clamp(BattleData.battleDatInstance.enemyHealth, 0, 100);
         if (BattleData.battleDatInstance.playerHealth <= 0) {
-            finalWinner.text = "Enemy wins!";
+            finalWinner.text = "Enemy WINS!";
+            StartCoroutine("GoToTitle");
         }
         else if (BattleData.battleDatInstance.enemyHealth <= 0) {
-            finalWinner.text = "Player wins!";
+            finalWinner.text = "Player WINS!";
+            StartCoroutine("GoToTitle");
         }
         else if (BattleData.battleDatInstance.enemySpells.Count == 0)
         {
             if (BattleData.battleDatInstance.playerSpells.Count == 0)
             {
                 finalWinner.text = "Both you and enemy ran out of spells! It's a DRAW!";
+                StartCoroutine("GoToTitle");
             }
             else
             {
                 finalWinner.text = "The enemy ran out of spells! You WIN!";
+                StartCoroutine("GoToTitle");
             }
         }
         else if (BattleData.battleDatInstance.playerSpells.Count == 0) 
         {
             finalWinner.text = "You ran out of spells! You LOSE!";
+            StartCoroutine("GoToTitle");
         }
 
         eHealth.text = BattleData.battleDatInstance.enemyHealth.ToString();
@@ -196,5 +204,12 @@ public class attackGameScript : MonoBehaviour
         }
         //Should update health text
         spellLaunched++;
+    }
+
+    IEnumerator GoToTitle() 
+    {
+        isDone = true;
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Start");
     }
 }

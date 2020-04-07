@@ -16,13 +16,17 @@ public class SpellDataWrapper : MonoBehaviour
 
     public void MakeSelection() 
     {
-        Debug.Log("Flibbertygibber");
-
-        count--;
-        SpellHolder thisSpell = new SpellHolder(spellType, level);
-        BattleData.battleDatInstance.playerSpells.Remove(thisSpell);
-        attackGameScript.attackDataInstance.playerSelectedSpell = thisSpell;
-        attackGameScript.attackDataInstance.MakeEnemySelection();
-        GetComponent<Button>().interactable = false;
+        if (attackGameScript.isDone)
+        {
+            GetComponent<Button>().interactable = false;
+        }
+        else {
+            count--;
+            SpellHolder thisSpell = new SpellHolder(spellType, level);
+            BattleData.battleDatInstance.playerSpells.Remove(thisSpell);
+            attackGameScript.attackDataInstance.playerSelectedSpell = thisSpell;
+            attackGameScript.attackDataInstance.MakeEnemySelection();
+            GetComponent<Button>().interactable = false; 
+        }
     }
 }
