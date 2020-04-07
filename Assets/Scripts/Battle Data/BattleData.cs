@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class BattleData : MonoBehaviour
 {
     public static BattleData battleDatInstance;
+
+    public int playerHealth;
+
+    public int enemyHealth;
+
     public List<SpellHolder> playerSpells = new List<SpellHolder>();
     public List<SpellHolder> enemySpells = new List<SpellHolder>();
 
@@ -18,6 +23,8 @@ public class BattleData : MonoBehaviour
         else 
         {
             battleDatInstance = this;
+            playerHealth = 15;
+            enemyHealth = 15;
             DontDestroyOnLoad(this);
 
             playerSpells.Add(new SpellHolder(SpellHolder.SPELL_TYPE.FIRE, 1));
