@@ -11,7 +11,7 @@ public class spellGameData : MonoBehaviour
     //Will increment after enemy takes a turn
     public int turnCounter = 0;
     public bool diceGamePlaying = false;
-    bool endingFlag = false;
+
 
     public GameObject endScripting;
     public GameObject endCounting;
@@ -40,23 +40,22 @@ public class spellGameData : MonoBehaviour
 
     private void Update()
     {
-        if (dataInstance.allSpellsInPool.Count == 0 &&  !endingFlag)
+        if (dataInstance.allSpellsInPool.Count == 0)
         {
             StartCoroutine(spellGameData.dataInstance.ChangeScene());
-            endingFlag = true;
         }
     }
     //Launches to the defense game after waiting for 3 seconds
     public IEnumerator ChangeScene(){
-        int countDown = 3;
+        float countDown = 3;
         endScripting.SetActive(true);
         endCounting.SetActive(true);
 
         //Trying to do a countdown timer
         while(countDown > 0){
              //Gets rid of weird glitching effect
-            //endCount.SetAllDirty();
-            endCount.text = "" + countDown;
+            endCount.SetAllDirty();
+            endCount.text = countDown.ToString();
             yield return new WaitForSeconds(1.5f);
             countDown--;
          }
