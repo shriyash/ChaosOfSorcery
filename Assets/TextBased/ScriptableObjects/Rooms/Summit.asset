@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86deefa56ee93b479d232b5da312e82, type: 3}
   m_Name: Summit
   m_EditorClassIdentifier: 
-  description: 
-  roomName: 
+  description: After climbing the staricase you come accross the summit, an ornate
+    velvet room, starlight washing in and lighting the strange place. The door slams
+    behind you but your nerves are steady.  You look around, worried the one you
+    seek has already fled, only to turn and see him. A hulking figure, a demon in
+    robes, stands on the opposite side of you. His wings stretch as he brings up
+    his wand, a rotten shaft of worm bitten wood which pulses with dark energy.
+  roomName: summit
   exits: []
   interactableObjectsInRoom: []

@@ -12,15 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86deefa56ee93b479d232b5da312e82, type: 3}
   m_Name: Checkpoint
   m_EditorClassIdentifier: 
-  description: You enter a long torch lit halway with an empty checkpoint desk on
-    your right Surprised, you notice a key on the desk.
+  description: You enter the Checkpoint, grand room eventually becoming blocked by
+    what would appear to be a long wall of stone, small outcroppings which allow
+    only one folk through at a time.
   roomName: checkpoint
   exits:
   - keyString: south
-    exitDescription: 'There is light flowing in from the '
+    exitDescription: There is light flowing in from the south, back to the skydock.
     valueRoom: {fileID: 11400000, guid: 78b69e7bd9449fd42b58c04edf6676fd, type: 2}
   - keyString: north
-    exitDescription: There is a bird cawwing through a doorway to the north
+    exitDescription: The smell of freshly cooking meet is coming through the door
+      to the north
+    valueRoom: {fileID: 11400000, guid: 6ac21701c584d354ab9bf5aa3c890cd5, type: 2}
+  - keyString: east
+    exitDescription: You see a book on a desk throught the doorway to the east
     valueRoom: {fileID: 11400000, guid: 1e6cbd955a3bae24283628af095de83d, type: 2}
-  interactableObjectsInRoom:
-  - {fileID: 11400000, guid: ac49512e184e09b49beadacaf2232a92, type: 2}
+  - keyString: west
+    exitDescription: There are birds cawwing through a doorway to the west
+    valueRoom: {fileID: 11400000, guid: 087beab14d290c94da553f6545901f79, type: 2}
+  interactableObjectsInRoom: []

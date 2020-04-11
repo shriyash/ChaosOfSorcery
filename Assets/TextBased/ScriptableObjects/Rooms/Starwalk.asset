@@ -12,7 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86deefa56ee93b479d232b5da312e82, type: 3}
   m_Name: Starwalk
   m_EditorClassIdentifier: 
-  description: 
-  roomName: 
-  exits: []
+  description: 'You enter an empty vestibule. For being so plain the room feels full
+    of energy. You sense electricity, fire, and ice all swarming around you and pulling
+    you toward a door with an a large wand insignia on it. '
+  roomName: starwalk
+  exits:
+  - keyString: south
+    exitDescription: A door with a sign that says " Grandstage" lies to your south
+    valueRoom: {fileID: 11400000, guid: 2afc48b7f55ec5645aa26d51643d50a4, type: 2}
+  - keyString: north
+    exitDescription: There is an ornate door with an official looking insignia on
+      it to the north
+    valueRoom: {fileID: 11400000, guid: 732deef39eee7694992139601bec4a84, type: 2}
+  - keyString: east
+    exitDescription: A door with a sign that says " Crypstadium" lies to your east
+    valueRoom: {fileID: 11400000, guid: 4655ff3cc0c836542ae3e928c45ac6dc, type: 2}
+  - keyString: west
+    exitDescription: A door with a sign that says " Pitcher" lies to your west
+    valueRoom: {fileID: 11400000, guid: 57538d5a5aa69144e88d41e73029bd66, type: 2}
   interactableObjectsInRoom: []
