@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -266.05, y: -50.5}
-  m_SizeDelta: {x: -572.6, y: -138.7}
+  m_AnchoredPosition: {x: -302, y: -53}
+  m_SizeDelta: {x: -725.8, y: -138.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156597190
 MonoBehaviour:
@@ -230,8 +230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000041723, y: 88.5}
-  m_SizeDelta: {x: 124.4, y: 31.2}
+  m_AnchoredPosition: {x: -1, y: 106}
+  m_SizeDelta: {x: 132.6, y: 31.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195912312
 MonoBehaviour:
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22209872, g: 0.4339623, b: 0.0102349585, a: 1}
+  m_Color: {r: 0.052732304, g: 0.05660379, b: 0.04886082, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 16
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -309,8 +309,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 255.4, y: -50.5}
-  m_SizeDelta: {x: -551.6, y: -138.7}
+  m_AnchoredPosition: {x: 308, y: -50.5}
+  m_SizeDelta: {x: -723.8, y: -138.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244423857
 MonoBehaviour:
@@ -461,7 +461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.10001, y: 82}
+  m_AnchoredPosition: {x: 0.10001, y: 99}
   m_SizeDelta: {x: 124.2, y: 38.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341616111
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7320052, g: 0.010813437, b: 0.764151, a: 1}
+  m_Color: {r: 0.06586899, g: 0.06198823, b: 0.066037714, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 16
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -604,7 +604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.60001, y: 89}
+  m_AnchoredPosition: {x: 0.60001, y: 105}
   m_SizeDelta: {x: 123.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540878804
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.022694906, g: 0.14712124, b: 0.9622642, a: 1}
+  m_Color: {r: 0.0744037, g: 0.0745467, b: 0.0754717, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -843,8 +843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 81, y: -50.5}
-  m_SizeDelta: {x: -572.6, y: -138.7}
+  m_AnchoredPosition: {x: 111, y: -51.25}
+  m_SizeDelta: {x: -729.4, y: -140.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &740517705
 MonoBehaviour:
@@ -950,7 +950,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Within the story mode portion of the game, do all the things
+  m_Text: Within the story mode portion of the game, respond to the text prompts
+    by typing in a prompted response
 --- !u!222 &795561049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1072,7 +1073,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.60001, y: 80}
+  m_AnchoredPosition: {x: 0.60001, y: 99}
   m_SizeDelta: {x: 123.2, y: 41.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1019186851
@@ -1088,7 +1089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.023422379, g: 0.509434, b: 0.021626905, a: 1}
+  m_Color: {r: 0.026032403, g: 0.028301895, b: 0.026032403, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1096,7 +1097,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 16
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -1151,7 +1152,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.8349056, g: 0.899109, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.7877358, g: 0.8668147, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1267,7 +1268,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: In this game, you'll be playing as a wizard, on their way to defeat their
-    bitter enemies, the wand mages
+    bitter enemies, the wand mages!
 --- !u!222 &1384187491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1312,8 +1313,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -95, y: -50.5}
-  m_SizeDelta: {x: -572.6, y: -138.7}
+  m_AnchoredPosition: {x: -96, y: -52}
+  m_SizeDelta: {x: -718.7, y: -138.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390955962
 MonoBehaviour:

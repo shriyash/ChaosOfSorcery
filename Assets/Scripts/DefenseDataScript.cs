@@ -97,11 +97,13 @@ public class DefenseDataScript : MonoBehaviour
         Text endText = GameObject.Find("End Text").GetComponent<Text>();
         if (playerWon) 
         {
+            BattleData.battleDatInstance.playerHealth += 5;
             endText.text = "You defended yourself against your opponent! You get a HEALTH BONUS!";
         }
 
         else
         {
+            BattleData.battleDatInstance.enemyHealth += 5;
             endText.text = "Your opponent mounted a stronger defense! The enemy gets a HEALTH BONUS!";
         }
 
