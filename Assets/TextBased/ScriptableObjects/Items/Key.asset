@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52f42491d6fe024bbaf6b1dc8bc1d8f, type: 3}
+  m_Name: Key
+  m_EditorClassIdentifier: 
+  noun: Key
+  description: A small triangular key sits on a desk at the check in counter
+  interactions:
+  - inputAction: {fileID: 11400000, guid: a4f427aa882efaa4a9a0152e53362dca, type: 2}
+    textResponse: It is a very shiny and well kept tiny key
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: d260b46541b81a04b98c4a44afdcf8b2, type: 2}
+    textResponse: You grab the key and add it to your bag
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 20b865ec76c1ec844a8486cee0a304a1, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: c970e6dd835068245b5f95f693f7ff01, type: 2}
