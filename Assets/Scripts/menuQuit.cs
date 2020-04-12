@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class menuQuit : MonoBehaviour
 {
-    void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
