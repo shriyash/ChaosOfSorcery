@@ -41,9 +41,12 @@ public class tileScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SelectTile();
-        DefenseDataScript.defenseData.CheckLose();
-        AIDefenseScript.ai.TakeTurn();
+        if (!DefenseDataScript.defenseData.gameDone)
+        {
+            SelectTile();
+            DefenseDataScript.defenseData.CheckLose();
+            AIDefenseScript.ai.TakeTurn();
+        }
     }
 
     public void SelectTile() 
