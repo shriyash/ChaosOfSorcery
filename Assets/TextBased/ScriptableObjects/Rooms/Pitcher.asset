@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86deefa56ee93b479d232b5da312e82, type: 3}
+  m_Name: Pitcher
+  m_EditorClassIdentifier: 
+  description: You enter the Pitcher, its walls and floor oozing and bubbling with
+    acid.  There is a single safe passage accross the room.
+  roomName: pitcher
+  exits:
+  - keyString: south
+    exitDescription: There is a door to the south that leads to the Gardens.
+    valueRoom: {fileID: 11400000, guid: 087beab14d290c94da553f6545901f79, type: 2}
+  - keyString: north
+    exitDescription: There is a charred wooden door on the north wall
+    valueRoom: {fileID: 11400000, guid: 10c5b55f5adfea943b590561b38202ff, type: 2}
+  interactableObjectsInRoom: []

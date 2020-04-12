@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86deefa56ee93b479d232b5da312e82, type: 3}
+  m_Name: Gardens
+  m_EditorClassIdentifier: 
+  description: You travel through the fine gardens with ease, it seems the many mages
+    which inhabit this place see little reason to wander these lush expanses. As
+    you pass great trees and ornate flower beds, you wonder why such a place is even
+    here, if it should be so unnecessary.
+  roomName: gardens
+  exits:
+  - keyString: east
+    exitDescription: There is a door to your east that leads back to the Checkpoint
+    valueRoom: {fileID: 11400000, guid: 0af76fc154a105f49a3509ade5061a3d, type: 2}
+  - keyString: north
+    exitDescription: There is a wooden door on the north wall that resembles a budding
+      sunflower
+    valueRoom: {fileID: 11400000, guid: 57538d5a5aa69144e88d41e73029bd66, type: 2}
+  interactableObjectsInRoom: []

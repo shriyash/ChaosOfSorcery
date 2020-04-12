@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86deefa56ee93b479d232b5da312e82, type: 3}
+  m_Name: Grandstage
+  m_EditorClassIdentifier: 
+  description: 'You enter the Grandstage, a large amiptheater that seems like it
+    has seen its fair share of magical battles at its center. Everything in the room
+    seems to be made out of large marble cubes. You look up to see a huge mural of
+    a thunderstorm, it appears as if its alive. '
+  roomName: grandstage
+  exits:
+  - keyString: south
+    exitDescription: There is a door to the south that leads to the Market.
+    valueRoom: {fileID: 11400000, guid: 6ac21701c584d354ab9bf5aa3c890cd5, type: 2}
+  - keyString: north
+    exitDescription: Theres a marble door up a set of stairs at the north end of
+      the room
+    valueRoom: {fileID: 11400000, guid: 10c5b55f5adfea943b590561b38202ff, type: 2}
+  interactableObjectsInRoom: []

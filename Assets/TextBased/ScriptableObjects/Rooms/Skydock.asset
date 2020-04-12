@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86deefa56ee93b479d232b5da312e82, type: 3}
+  m_Name: Skydock
+  m_EditorClassIdentifier: 
+  description: "The days blend to weeks as one voyages upon skyships, and your trip
+    is no exception. Days of shaky steps and groaning wooden floors have done quite
+    a number on you. Oh, the sacrifices you must make for the realm. You are a staff
+    mage, sent by your order to cripple your major rival, the wand mages. You have
+    been trained for many a month, and have now finally prepared yourself to arrive
+    at the den of that order itself, their great sky tower.\r\n\r\nFInally, as the
+    ship draws to a stop, you step out onto the tower\u2019s skydock. A crowd of
+    folk of varying ilks flood out with you, allowing you to take advantage and slip
+    into the dock proper. The dock itself is a great room, like a half cylinder,
+    made of raw stone and metal. Various wand mages meander about, unaware of the
+    serpent in their midst.\r\n"
+  roomName: skydock
+  exits:
+  - keyString: north
+    exitDescription: You see an entrance into the Wandmage Tower
+    valueRoom: {fileID: 11400000, guid: 0af76fc154a105f49a3509ade5061a3d, type: 2}
+  interactableObjectsInRoom: []
