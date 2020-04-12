@@ -77,13 +77,14 @@ public class attackGameScript : MonoBehaviour
             eHealth.text = BattleData.battleDatInstance.enemyHealth.ToString();
             spellLaunchedWatch++;
         }
-        Mathf.Clamp(BattleData.battleDatInstance.playerHealth, 0, 100);
-        Mathf.Clamp(BattleData.battleDatInstance.enemyHealth, 0, 100);
+
         if (BattleData.battleDatInstance.playerHealth <= 0) {
+            BattleData.battleDatInstance.playerHealth = 0;
             finalWinner.text = "Enemy WINS!";
             StartCoroutine("GoToTitle");
         }
         else if (BattleData.battleDatInstance.enemyHealth <= 0) {
+            BattleData.battleDatInstance.enemyHealth = 0;
             finalWinner.text = "Player WINS!";
             StartCoroutine("GoToTitle");
         }
