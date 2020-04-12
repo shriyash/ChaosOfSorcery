@@ -107,6 +107,6 @@ public class GameController : MonoBehaviour
     }
     public void ExitToBattle()
     {
-        SceneManager.LoadScene("AttackGame");
+        SceneManager.LoadScene("spellSelectionGame");
     }
 }
