@@ -940,8 +940,8 @@ Canvas:
   m_GameObject: {fileID: 826586690}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 2082618692}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -950,7 +950,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &826586694
 RectTransform:
@@ -1313,6 +1313,7 @@ GameObject:
   - component: {fileID: 1628027603}
   - component: {fileID: 1628027605}
   - component: {fileID: 1628027604}
+  - component: {fileID: 1628027606}
   m_Layer: 5
   m_Name: End Text
   m_TagString: Untagged
@@ -1336,8 +1337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -643, y: 93.7}
-  m_SizeDelta: {x: 2285.8, y: 1024}
+  m_AnchoredPosition: {x: 54, y: -417}
+  m_SizeDelta: {x: 5465.1, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628027604
 MonoBehaviour:
@@ -1360,7 +1361,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 299
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 300
@@ -1370,7 +1371,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: jkghjkghjkghjkghjkghjkghjkghjkghj
 --- !u!222 &1628027605
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1379,6 +1380,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628027602}
   m_CullTransparentMesh: 0
+--- !u!114 &1628027606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628027602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 20, y: 20}
+  m_UseGraphicAlpha: 1
 --- !u!4 &1841983862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4299085689640135673, guid: b36790ab77f8e459c816faf5c5ce175d,
@@ -1789,7 +1805,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.01
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
